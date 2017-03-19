@@ -1,0 +1,15 @@
+.logo-check:before {
+    content: "\e2ff";
+}
+
+[class^="logo-"]:before,
+[class*=" logo-"]:before {
+    font-family: "streamline-30px" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
