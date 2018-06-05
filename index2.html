@@ -1,0 +1,1908 @@
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible">
+
+
+<meta content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0" name="viewport">
+
+
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link href="https://profile.intra.42.fr/assets/42_logo_black-684989d43d629b3c0ff6fd7e1157ee04db9bb7a73fba8ec4e01543d650a1c607.png" rel="icon" type="image/svg">
+<link href="https://profile.intra.42.fr/assets/42_logo_black-684989d43d629b3c0ff6fd7e1157ee04db9bb7a73fba8ec4e01543d650a1c607.png" rel="shortcut icon" type="image/svg">
+<link href="https://profile.intra.42.fr//opensearch.xml" rel="search" title="login" type="application/opensearchdescription+xml">
+
+<script src="https://profile.intra.42.fr///cdn.ravenjs.com/3.14.0/raven.min.js"></script>
+<script src="https://profile.intra.42.fr///cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+<title>jcarra - Profile - Intra</title>
+
+
+<link rel="stylesheet" media="all" href="https://profile.intra.42.fr//assets/application-5dad823af24f6b372e32c780ca0a2d1395e55fcd5bd6021c1032ff0f9e2f9bd8.css">
+
+
+
+
+</head><body class=" ">
+
+
+
+<div class="notifications-container" data-flashes-url="https://profile.intra.42.fr/flashes" data-notifications-url="https://profile.intra.42.fr/notifications"></div>
+
+<div class="main-navbar">
+<div class="main-navbar-left">
+<div class="main-navbar-logo" data-turbolinks-scaffold="">
+<a href="https://profile.intra.42.fr"><img alt="42" src="https://profile.intra.42.fr/assets/42_logo-7dfc9110a5319a308863b96bda33cea995046d1731cebb735e41b16255106c12.svg">
+</a></div>
+<span class="hidden-sidebars main-menu-trigger lines-button x" data-trigger-menu="">
+<span class="lines"></span>
+</span>
+<a class="search-mobile-button hidden-sidebars icon-search" href="https://profile.intra.42.fr/searches"></a>
+<form action="https://profile.intra.42.fr/searches/search" class="main-navbar-search hidden-xs" data-forum-url="https://forum.intra.42.fr/topics/" data-project-url="https://projects.intra.42.fr/" data-user-url="https://profile.intra.42.fr/users/" method="get">
+<input autocomplete="off" autofocus="" class="search-input" name="query" placeholder="search...">
+</form>
+</div>
+<div class="main-navbar-user-nav" data-turbolinks-scaffold="">
+<div class="user-actions hidden-xs">
+<span class="dropdown" id="quest-menu">
+<a class="user-action labelable" data-toggle="dropdown" href="#">
+<span class="icon-bookmark-3-1 user-action-icon labelable"></span>
+</a>
+<ul aria-labelledby="quest-menu" class="quest-container dropdown-menu dropdown-menu-right" role="menu">
+<p class="quest-legend">
+CURRENT MAIN QUEST
+</p>
+<li class="quest-item">
+<h4 class="quest-header">Curriculum Phase 1</h4>
+<p class="quest-description">End the first part of your curriculum.</p>
+</li>
+<li>
+<a href="https://profile.intra.42.fr/users/me/quests">See all quests</a>
+</li>
+</ul>
+</span>
+</div>
+<div class="user-actions hidden-xs">
+<a class="user-action labelable" data-notification-drop="" href="#"><span class="icon-newspaper-2 user-action-icon"></span>
+<span class="user-action-count labeled" data-counter-count="0">0</span>
+</a></div>
+<span class="dropdown">
+<a data-toggle="dropdown" href="#">
+<span data-login="jcarra">
+jcarra
+</span>
+<div class="user-profile-picture visible-sidebars" style="background-image: url(https://cdn.intra.42.fr/users/small_jcarra.jpg)"></div>
+</a>
+<ul aria-labelledby="User menu" class="dropdown-menu" role="menu">
+<li>
+<a href="https://profile.intra.42.fr/slots"><span class="iconf-calendar"></span>
+Manage slots
+</a></li>
+<li>
+<a href="https://profile.intra.42.fr/users/jcarra"><span class="iconf-user"></span>
+View my profile
+</a></li>
+<li>
+<a href="https://profile.intra.42.fr/languages">Settings
+</a></li>
+<li>
+<a rel="nofollow" data-method="delete" href="https://signin.intra.42.fr/users/sign_out"><span class="iconf-power-off"></span>
+<b>Logout</b>
+</a></li>
+</ul>
+</span>
+
+<!-- frshp notifications -->
+<!-- = link_to("#{Rails.application.config.module_url['profile']}/friends", :class => "user-action labelable") do -->
+<!-- %span.icon-user -->
+<!-- %span.labeled= current_user.invitations.count -->
+</div>
+</div>
+
+<div class="page">
+<div class="page-sidebar left-main-container page-sidebar-fixed-left under-main-navbar"><ul class="main-left-navbar">
+<div class="_">
+<li>
+<a class="active" href="https://profile.intra.42.fr"><span class="icon-user-2"></span>
+<span class="visible-overlay">
+Profile
+</span>
+</a></li>
+<li>
+<a class="inactive" href="https://projects.intra.42.fr"><span class="icon-network-2-1"></span>
+<span class="visible-overlay">
+Projets
+</span>
+</a></li>
+<li>
+<a class="inactive" href="https://elearning.intra.42.fr"><span class="icon-movie-play-1"></span>
+<span class="visible-overlay">
+E-learning
+</span>
+</a></li>
+<li>
+<a class="inactive" href="https://forum.intra.42.fr"><span class="icon-bubble-conversation-5"></span>
+<span class="visible-overlay">
+Forum
+</span>
+</a></li>
+<li>
+<a class="inactive" href="https://companies.intra.42.fr"><span class="icon-briefcase"></span>
+<span class="visible-overlay">
+Companies
+</span>
+</a></li>
+<li>
+<a class="inactive" href="https://meta.intra.42.fr"><span class="icon-compass-2"></span>
+<span class="visible-overlay">
+Meta
+</span>
+</a></li>
+<li>
+<a class="inactive" href="https://shop.intra.42.fr"><span class="icon-shopping-1"></span>
+<span class="visible-overlay">
+Shop
+</span>
+</a></li>
+</div>
+<div class="admin-links">
+</div>
+</ul><div class="main-sidebar-left"></div></div>
+<div class="page-content page-content-fluid" data-turbolinks-scaffold="">
+<div class="row">
+<div class="main-top-menu">
+
+</div>
+<div class="container-item full-width profile-item profile-on-users">
+<img alt="profile image" class="profile-mobile-image visible-xxs" src="https://cdn.intra.42.fr/users/medium_jcarra.jpg">
+<div class="container-inner-item profile-item-top profile-banner" style="background-image: url(https://cdn.intra.42.fr/coalition/cover/3/assembly_background.jpg)">
+<div class="profile-left-box">
+<div class="bg-image-item profile-image rounded user-image" style="background-image: url(https://cdn.intra.42.fr/users/medium_jcarra.jpg)">
+<div class="hidden-xs bday_overlay">
+
+</div>
+</div>
+<div class="user-primary" data-turbolinks-scaffold="inside">
+<div class="user-infos col-sm-12">
+<h2 class="profile-name margin-top-0 margin-bottom-0 flex flex-row align-items-center">
+<div class="user-banner inline margin-right-10" data-default-url="https://profile.intra.42.fr/assets/coalitions/factionless-05b8cd65bda8f5eaf56ecf1d16493f41908801cfd66aa97fb27c9611064f4f36.svg">
+<a href="/blocs/1/coalitions/3"><div class="coalition-flag-mini">
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="banner" x="0px" y="0px" viewBox="0 0 68 104" style="enable-background:new 0 0 68 104; fill: #c6c6c6;fill: #A061D1" xml:space="preserve" class="coalition-flag--flag">
+	<g id="banner-content">
+		<g id="UI-Intranet-banner-content" transform="translate(-96.000000, -60.000000)">
+			<g id="banner-content-g-1" transform="translate(96.000000, 60.000000)">
+				<polygon id="banner-content-polygon-1" points="0,0 0,80.5 34.3,104 68,80.5 68,0"></polygon>
+			</g>
+		</g>
+	</g>
+</svg>
+
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Calque_1" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;fill: #fff" xml:space="preserve" class="coalition-flag--icon">
+<path class="st0" d="M532.8,531.5c61.2-61.2,65.5-156.6,12.8-223.5c-4.3-4.3-7.1-8.5-12.8-14.2l-14.2-14.2L334.9,97.4  c-4.3,2.8-7.1,7.1-11.4,10l-10,10l199.3,199.3c4.3,4.3,8.5,10,14.2,15.7c39.9,54.1,34.2,132.4-14.2,179.3  c-25.6,25.6-61.2,39.9-96.8,39.9c-28.5,0-55.5-8.5-78.3-24.2L325,540c-2.8,2.8-7.1,5.7-10,8.5c28.5,21.3,64,32.7,99.6,32.7  C458.7,581.3,501.4,564.2,532.8,531.5L532.8,531.5z M494.3,313.7l-185,185L295.1,513c-4.3,2.8-10,8.5-15.7,12.8  c-24.2,17.1-52.7,27-82.5,27c-37,0-71.2-14.2-96.8-39.9c-47-47-54.1-122.4-15.7-176.5l-12.8-12.8c-2.8-2.8-5.7-7.1-8.5-10  c-49.8,66.9-42.7,159.4,15.7,217.8c31.3,31.3,74,48.4,118.1,48.4c38.4,0,75.4-12.8,103.9-37c4.3-4.3,8.5-7.1,14.2-12.8l14.2-14.2  L512.8,335c-2.8-4.3-7.1-7.1-10-11.4L494.3,313.7L494.3,313.7z M101.5,295.2c-4.3-4.3-8.5-10-14.2-15.7  c-39.9-54.1-34.2-132.4,14.2-179.3c25.6-25.6,59.8-39.9,96.8-39.9c28.5,0,55.5,8.5,78.3,24.2l12.8-12.8c2.8-2.8,7.1-5.7,10-8.5  c-28.5-21.3-64-32.7-99.6-32.7c-44.1,0-86.8,17.1-118.1,48.4c-61.2,61.2-65.5,156.6-12.8,223.5c4.3,4.3,7.1,8.5,12.8,14.2  l197.8,197.8c4.3-2.8,7.1-7.1,11.4-10l10-10l-185-185L101.5,295.2L101.5,295.2z M296.5,80.3c5.7-5.7,10-8.5,14.2-12.8  c28.5-24.2,65.5-37,103.9-37c44.1,0,86.8,17.1,118.1,48.4c58.4,59.8,65.5,152.3,15.7,219.2c-2.8-2.8-5.7-7.1-8.5-10l-12.8-14.2  c38.4-54.1,31.3-129.5-15.7-176.5c-25.6-25.6-59.8-39.9-96.8-39.9c-29.9,0-58.4,10-82.5,27c-5.7,5.7-11.4,10-15.7,14.2L117.2,298  l-10-10c-2.8-2.8-5.7-7.1-8.5-10L296.5,80.3L296.5,80.3z"></path>
+</svg>
+
+</div>
+</a></div>
+<span class="coalition-name margin-right-10">
+<div class="flex flex-column">
+<a href="/blocs/1/coalitions/3"><span class="coalition-span" style="color: #A061D1">
+The Assembly
+</span>
+
+</a><div class="inline margin-right-10 margin-top-5">
+<span class="inline" data-placement="bottom" data-toggle="tooltip" id="coalition-score" style="display: none" title="Score">
+<span class="icon iconf-trophy"></span>
+<span class="value"></span>
+</span>
+<span class="inline margin-left-10" data-placement="bottom" data-toggle="tooltip" id="coalition-rank" style="display: none" title="Rank">
+<span class="icon iconf-arrow-43"></span>
+<span class="value"></span>
+</span>
+</div>
+</div>
+</span>
+<span class="name margin-top-15 margin-bottom-10">
+
+
+Jonathan Carra
+</span>
+<span class="login" data-login="jcarra">jcarra</span>
+<div class="pull-right button-actions margin-right-10">
+<a href="https://projects.intra.42.fr/projects/graph?login=jcarra"><span class="icon iconf-globe padding-5 padding-left-10 padding-right-10" data-placement="bottom" data-toggle="tooltip" title="Holy graph"></span>
+</a><a href="/users/jcarra/infos/edit"><span class="icon iconf-pencil-2 padding-5 padding-left-10 padding-right-10" data-placement="bottom" data-toggle="tooltip" title="Edit profile"></span>
+</a></div>
+</h2>
+<div class="user-infos-sub margin-top-10">
+<div class="user-wallet user-inline-stat"><span class="coalition-span" style="color: #4180DB">
+Wallet
+</span><span class="user-wallet-value">95&nbsp;₳</span></div>
+<div class="user-correction-point user-inline-stat"><span class="coalition-span" style="color: #A061D1">
+Correction points
+</span><span class="user-correction-point-value">-6</span></div>
+<div class="user-grade user-inline-stat"><span class="coalition-span" style="color: #A061D1">
+Cursus
+</span><span class="user-cursus-value">
+<select class="cursus-user-select" style="width: 50px">
+<option selected="selected" value="42">42</option>
+<option value="piscine-c">Piscine C</option>
+</select>
+</span></div>
+<div class="user-grade user-inline-stat" data-cursus="42"><span class="coalition-span" style="color: #A061D1">
+Grade
+</span><span class="user-grade-value">
+Commander</span></div>
+<div class="user-eta user-inline-stat" data-cursus="42">
+<span data-placement="bottom" data-toggle="tooltip" title="Estimated time of end of cursus">
+<span class="coalition-span" style="color: #A061D1">
+ETEC
+</span>
+
+</span>
+<span class="user-eta-value" data-long-date="2020-08-08 09:06:02 +0200">2020-08-08</span>
+</div>
+<div class="hidden user-grade user-inline-stat" data-cursus="piscine-c"><span class="coalition-span" style="color: #A061D1">
+Grade
+</span><span class="user-grade-value">
+Novice</span></div>
+</div>
+<div class="user-data">
+<div class="user-header-box logtime hidden" id="logtime_container">
+<div color="#A061D1" id="logtime_goal"></div>
+</div>
+<div class="user-header-box location">
+<div class="user-poste-status">
+<span class="icon-circle text-success"></span>
+Available
+</div>
+<div class="user-poste-infos">
+e2r13p5
+</div>
+</div>
+<div class="user-header-box flex flex-direction-colums flex-space-around padding-left-0 hidden" id="goals_container">
+<div class="profile-infos-bottom bh">
+<div class="profile-infos-item blackol flex flex-direction-row flex-align-items-center">
+<span class="title-goal">
+<span class="coalition-span" style="color: #A061D1">
+Quests
+</span>
+
+</span>
+<div class="flex flex-space-between content w-100">
+<span class="status-bh" data-placement="top" data-toggle="tooltip" title=""></span>
+<div class="progress-item w-100">
+<div class="progress margin-bottom-0">
+<div class="progress-bar" role="progressbar" style="width: 0%"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="profile-infos-item exams flex flex-direction-row flex-align-items-center">
+<span class="title-goal">
+<span class="coalition-span" style="color: #A061D1">
+Exams
+</span>
+
+</span>
+<div class="flex flex-space-between content w-100"></div>
+</div>
+<div class="profile-infos-item goals-internships flex flex-direction-row flex-align-items-center">
+<span class="title-goal">
+<span class="coalition-span" style="color: #A061D1">
+Internships
+</span>
+
+</span>
+<div class="flex flex-space-between content w-100">
+<a href="https://projects.intra.42.fr/first-internship/jcarra"><span class="iconf-briefcase" data-placement="bottom" data-slug="first-internship" data-toggle="tooltip" title="First internship"></span>
+</a><a href="https://projects.intra.42.fr/part-time/jcarra"><span class="iconf-briefcase" data-placement="bottom" data-slug="part-time" data-toggle="tooltip" title="Part time"></span>
+</a><a href="https://projects.intra.42.fr/final-internship/jcarra"><span class="iconf-briefcase" data-placement="bottom" data-slug="final-internship" data-toggle="tooltip" title="Final internship"></span>
+</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="user-progress">
+<div class="cursus-progress-item">
+<a class="progress-container" data-cursus="42" href="https://profile.intra.42.fr/users/jcarra/experiences/cursus_id/1">
+<div class="progress double">
+<div class="progress-bar" role="progressbar" style="width: 98%"></div>
+<div class="on-progress">level 12 - 98%</div>
+</div>
+</a>
+<a class="hidden progress-container" data-cursus="piscine-c" href="https://profile.intra.42.fr/users/jcarra/experiences/cursus_id/4">
+<div class="progress double">
+<div class="progress-bar" role="progressbar" style="width: 63%"></div>
+<div class="on-progress">level 7 - 63%</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="profile-right-box profile-infos col-md-3 padding-0">
+<div class="user-header-box infos">
+<div class="profile-infos-bottom">
+<div class="profile-infos-item" data-placement="left" data-toggle="tooltip" title="Phone">
+<i class="fas fa-phone"></i>
+<a href="tel:+33 6 68 16 82 62">
+<span class="coalition-span" style="color: #A061D1">
++33 6 68 16 82 62
+</span>
+
+</a>
+</div>
+<div class="profile-infos-item" data-placement="left" data-toggle="tooltip" title="Mail">
+<i class="far fa-envelope"></i>
+<a href="mailto:jcarra@student.42.fr">
+<span class="coalition-span" style="color: #A061D1">
+jcarra@student.42.fr
+</span>
+
+</a>
+</div>
+<div class="profile-infos-item" data-placement="left" data-toggle="tooltip" title="Primary campus">
+<i class="fas fa-map-marker-alt"></i>
+<span>Paris</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fullsize full-width fixed-height">
+<div class="col-lg-6 col-md-12 col-sm-12 fixed-height">
+<!-- Le graphe de locations -->
+<div class="container-inner-item boxed hide-overflow">
+<div class="tab-content">
+<div class="tab-pane active" id="locations" role="tabpanel">
+<svg data-url="/users/jcarra/locations_stats" id="user-locations" xmlns="http://www.w3.org/2000/svg"></svg>
+</div>
+</div>
+</div>
+
+</div>
+<div class="col-lg-6 col-md-12 col-sm-12 fixed-height not-fixed-xs">
+<div class="container-inner-item boxed hide-overflow not-fixed-xs">
+<div class="profile-menu col-xs-1 col-sm-1 col-md-2">
+<ul class="nav nav-stacked nav-pills" role="tablist">
+<li class="active" role="presentation">
+<a class="profile-title" data-toggle="tab" href="#marks" role="tab">
+<span class="hidden-sm hidden-xs">Marks</span>
+<span class="hidden-lg hidden-md icon icon-board"></span>
+</a>
+</li>
+<li role="presentation">
+<a class="profile-title" data-toggle="tab" href="#achievements" role="tab">
+<span class="hidden-sm hidden-xs">Achievements</span>
+<span class="hidden-lg hidden-md icon icon-award-3"></span>
+</a>
+</li>
+</ul>
+</div>
+<div class="tab-content">
+<div class="tab-pane active" id="marks" role="tabpanel">
+<div class="overflowable-item">
+<div class="project-item block-item main-project-item parent-item dropdown-toggle" data-cursus="42 formation-pole-emploi wethinkcode_ starfleet" data-project="piscine-php" data-target=".piscine-php.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/piscine-php/projects_users/447029">Piscine PHP</a></span>
+<span class="project-item-lighteable" data-long-date="2017-01-26 12:04:05 +0100"></span>
+<span class="caret"></span>
+<div class="icon-check-1 pull-right text-success">
+56
+</div>
+</div>
+<div class="collapsable collapse piscine-php">
+<div class="block-item parent piscine-php project-item" data-cursus="42 formation-pole-emploi wethinkcode_ starfleet" data-parent-name="piscine-php" data-project-occurence="0" id="piscine-php">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-php">Piscine PHP</a>
+/
+<a href="https://projects.intra.42.fr/projects/42-piscine-c-formation-piscine-php-day-00/projects_users/447429">Day 00 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+90
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-php">
+<div class="block-item parent piscine-php project-item" data-cursus="42 formation-pole-emploi wethinkcode_ starfleet" data-parent-name="piscine-php" data-project-occurence="0" id="piscine-php">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-php">Piscine PHP</a>
+/
+<a href="https://projects.intra.42.fr/projects/42-piscine-c-formation-piscine-php-day-01/projects_users/447430">Day 01 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+60
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-php">
+<div class="block-item parent piscine-php project-item" data-cursus="42 formation-pole-emploi wethinkcode_ starfleet" data-parent-name="piscine-php" data-project-occurence="0" id="piscine-php">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-php">Piscine PHP</a>
+/
+<a href="https://projects.intra.42.fr/projects/42-piscine-c-formation-piscine-php-day-02/projects_users/447672">Day 02 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-danger">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-php">
+<div class="block-item parent piscine-php project-item" data-cursus="42 formation-pole-emploi wethinkcode_ starfleet" data-parent-name="piscine-php" data-project-occurence="0" id="piscine-php">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-php">Piscine PHP</a>
+/
+<a href="https://projects.intra.42.fr/projects/42-piscine-c-formation-piscine-php-day-03/projects_users/447890">Day 03 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+100
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-php">
+<div class="block-item parent piscine-php project-item" data-cursus="42 formation-pole-emploi wethinkcode_ starfleet" data-parent-name="piscine-php" data-project-occurence="0" id="piscine-php">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-php">Piscine PHP</a>
+/
+<a href="https://projects.intra.42.fr/projects/42-piscine-c-formation-piscine-php-day-04/projects_users/448882">Day 04 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+64
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-php">
+<div class="block-item parent piscine-php project-item" data-cursus="42 formation-pole-emploi wethinkcode_ starfleet" data-parent-name="piscine-php" data-project-occurence="0" id="piscine-php">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-php">Piscine PHP</a>
+/
+<a href="https://projects.intra.42.fr/projects/42-piscine-c-formation-piscine-php-day-05/projects_users/450174">Day 05 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-danger">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-php">
+<div class="block-item parent piscine-php project-item" data-cursus="42 formation-pole-emploi wethinkcode_ starfleet" data-parent-name="piscine-php" data-project-occurence="0" id="piscine-php">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-php">Piscine PHP</a>
+/
+<a href="https://projects.intra.42.fr/projects/42-piscine-c-formation-piscine-php-day-06/projects_users/451183">Day 06 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-danger">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-php">
+<div class="block-item parent piscine-php project-item" data-cursus="42 formation-pole-emploi wethinkcode_ starfleet" data-parent-name="piscine-php" data-project-occurence="0" id="piscine-php">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-php">Piscine PHP</a>
+/
+<a href="https://projects.intra.42.fr/projects/42-piscine-c-formation-piscine-php-day-07/projects_users/451184">Day 07 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-danger">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-php">
+<div class="block-item parent piscine-php project-item" data-cursus="42 formation-pole-emploi wethinkcode_ starfleet" data-parent-name="piscine-php" data-project-occurence="0" id="piscine-php">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-php">Piscine PHP</a>
+/
+<a href="https://projects.intra.42.fr/projects/42-piscine-c-formation-piscine-php-day-08/projects_users/456724">Day 08 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-danger">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-php">
+<div class="block-item parent piscine-php project-item" data-cursus="42 formation-pole-emploi wethinkcode_ starfleet" data-parent-name="piscine-php" data-project-occurence="0" id="piscine-php">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-php">Piscine PHP</a>
+/
+<a href="https://projects.intra.42.fr/projects/42-piscine-c-formation-piscine-php-day-09/projects_users/456725">Day 09 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-danger">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-php">
+<div class="block-item parent piscine-php project-item" data-cursus="42 wethinkcode_ formation-pole-emploi starfleet" data-parent-name="piscine-php" data-project-occurence="0" id="piscine-php">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-php">Piscine PHP</a>
+/
+<a href="https://projects.intra.42.fr/projects/piscine-php-rush00/projects_users/449684">Rush00 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+119
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-php">
+<div class="block-item parent piscine-php project-item" data-cursus="42 wethinkcode_ formation-pole-emploi starfleet" data-parent-name="piscine-php" data-project-occurence="0" id="piscine-php">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-php">Piscine PHP</a>
+/
+<a href="https://projects.intra.42.fr/projects/piscine-php-rush01/projects_users/456726">Rush01 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-danger">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="project-item block-item main-project-item parent-item dropdown-toggle" data-cursus="42 formation-pole-emploi" data-project="first-internship" data-target=".first-internship.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/first-internship/projects_users/501529">First Internship</a></span>
+<span class="project-item-lighteable" data-long-date="2018-01-11 14:44:41 +0100"></span>
+<span class="caret"></span>
+<div class="icon-check-1 pull-right text-success">
+125
+</div>
+</div>
+<div class="collapsable collapse first-internship">
+<div class="block-item first-internship parent project-item" data-cursus="42 formation-pole-emploi wethinkcode_" data-parent-name="first-internship" data-project-occurence="0" id="first-internship">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/first-internship">First Internship</a>
+/
+<a href="https://projects.intra.42.fr/projects/first-internship-company-final-evaluation/projects_users/503922">Company final evaluation #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+125
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse first-internship">
+<div class="block-item first-internship parent project-item" data-cursus="formation-pole-emploi 42 wethinkcode_" data-parent-name="first-internship" data-project-occurence="0" id="first-internship">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/first-internship">First Internship</a>
+/
+<a href="https://projects.intra.42.fr/projects/first-internship-company-mid-evaluation/projects_users/503921">Company mid evaluation #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+125
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse first-internship">
+<div class="block-item first-internship parent project-item" data-cursus="42 formation-pole-emploi wethinkcode_" data-parent-name="first-internship" data-project-occurence="0" id="first-internship">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/first-internship">First Internship</a>
+/
+<a href="https://projects.intra.42.fr/projects/first-internship-contract-upload/projects_users/503919">Contract Upload #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+100
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse first-internship">
+<div class="block-item first-internship parent project-item" data-cursus="42 formation-pole-emploi wethinkcode_" data-parent-name="first-internship" data-project-occurence="0" id="first-internship">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/first-internship">First Internship</a>
+/
+<a href="https://projects.intra.42.fr/projects/first-internship-duration/projects_users/503920">Duration #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+125
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse first-internship">
+<div class="block-item first-internship parent project-item" data-cursus="42 formation-pole-emploi wethinkcode_" data-parent-name="first-internship" data-project-occurence="0" id="first-internship">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/first-internship">First Internship</a>
+/
+<a href="https://projects.intra.42.fr/projects/first-internship-peer-video/projects_users/503923">Peer Video #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+100
+</div>
+</span>
+</div>
+</div>
+<div class="project-item block-item main-project-item parent-item dropdown-toggle" data-cursus="piscine-c piscine-c-decloisonnee" data-project="piscine-c-day-09" data-target=".piscine-c-day-09.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/piscine-c-day-09/projects_users/271914">Day 09</a></span>
+<span class="project-item-lighteable" data-long-date="2016-07-16 23:24:26 +0200"></span>
+<span class="caret"></span>
+<div class="icon-check-1 pull-right text-success">
+34
+</div>
+</div>
+<div class="collapsable collapse piscine-c-day-09">
+<div class="block-item parent piscine-c-day-09 project-item" data-cursus="piscine-c piscine-c-decloisonnee" data-parent-name="piscine-c-day-09" data-project-occurence="0" id="piscine-c-day-09">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09">Day 09</a>
+/
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09-00/projects_users/274320">00 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-c-day-09">
+<div class="block-item parent piscine-c-day-09 project-item" data-cursus="piscine-c piscine-c-decloisonnee" data-parent-name="piscine-c-day-09" data-project-occurence="0" id="piscine-c-day-09">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09">Day 09</a>
+/
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09-01/projects_users/274322">01 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-c-day-09">
+<div class="block-item parent piscine-c-day-09 project-item" data-cursus="piscine-c piscine-c-decloisonnee" data-parent-name="piscine-c-day-09" data-project-occurence="0" id="piscine-c-day-09">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09">Day 09</a>
+/
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09-02/projects_users/274324">02 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-c-day-09">
+<div class="block-item parent piscine-c-day-09 project-item" data-cursus="piscine-c piscine-c-decloisonnee" data-parent-name="piscine-c-day-09" data-project-occurence="0" id="piscine-c-day-09">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09">Day 09</a>
+/
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09-03/projects_users/274326">03 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-c-day-09">
+<div class="block-item parent piscine-c-day-09 project-item" data-cursus="piscine-c piscine-c-decloisonnee" data-parent-name="piscine-c-day-09" data-project-occurence="0" id="piscine-c-day-09">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09">Day 09</a>
+/
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09-04/projects_users/274329">04 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-c-day-09">
+<div class="block-item parent piscine-c-day-09 project-item" data-cursus="piscine-c piscine-c-decloisonnee" data-parent-name="piscine-c-day-09" data-project-occurence="0" id="piscine-c-day-09">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09">Day 09</a>
+/
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09-05/projects_users/274330">05 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-c-day-09">
+<div class="block-item parent piscine-c-day-09 project-item" data-cursus="piscine-c piscine-c-decloisonnee" data-parent-name="piscine-c-day-09" data-project-occurence="0" id="piscine-c-day-09">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09">Day 09</a>
+/
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09-06/projects_users/274331">06 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-c-day-09">
+<div class="block-item parent piscine-c-day-09 project-item" data-cursus="piscine-c piscine-c-decloisonnee" data-parent-name="piscine-c-day-09" data-project-occurence="0" id="piscine-c-day-09">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09">Day 09</a>
+/
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09-07/projects_users/274332">07 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-c-day-09">
+<div class="block-item parent piscine-c-day-09 project-item" data-cursus="piscine-c piscine-c-decloisonnee" data-parent-name="piscine-c-day-09" data-project-occurence="0" id="piscine-c-day-09">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09">Day 09</a>
+/
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09-08/projects_users/274335">08 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-c-day-09">
+<div class="block-item parent piscine-c-day-09 project-item" data-cursus="piscine-c piscine-c-decloisonnee" data-parent-name="piscine-c-day-09" data-project-occurence="0" id="piscine-c-day-09">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09">Day 09</a>
+/
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09-09/projects_users/274336">09 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-c-day-09">
+<div class="block-item parent piscine-c-day-09 project-item" data-cursus="piscine-c piscine-c-decloisonnee" data-parent-name="piscine-c-day-09" data-project-occurence="0" id="piscine-c-day-09">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09">Day 09</a>
+/
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09-10/projects_users/274341">10 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-c-day-09">
+<div class="block-item parent piscine-c-day-09 project-item" data-cursus="piscine-c piscine-c-decloisonnee" data-parent-name="piscine-c-day-09" data-project-occurence="0" id="piscine-c-day-09">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09">Day 09</a>
+/
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09-11/projects_users/274344">11 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-c-day-09">
+<div class="block-item parent piscine-c-day-09 project-item" data-cursus="piscine-c piscine-c-decloisonnee" data-parent-name="piscine-c-day-09" data-project-occurence="0" id="piscine-c-day-09">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09">Day 09</a>
+/
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09-12/projects_users/274345">12 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-c-day-09">
+<div class="block-item parent piscine-c-day-09 project-item" data-cursus="piscine-c piscine-c-decloisonnee" data-parent-name="piscine-c-day-09" data-project-occurence="0" id="piscine-c-day-09">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09">Day 09</a>
+/
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09-13/projects_users/274347">13 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-c-day-09">
+<div class="block-item parent piscine-c-day-09 project-item" data-cursus="piscine-c piscine-c-decloisonnee" data-parent-name="piscine-c-day-09" data-project-occurence="0" id="piscine-c-day-09">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09">Day 09</a>
+/
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09-14/projects_users/274349">14 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-c-day-09">
+<div class="block-item parent piscine-c-day-09 project-item" data-cursus="piscine-c piscine-c-decloisonnee" data-parent-name="piscine-c-day-09" data-project-occurence="0" id="piscine-c-day-09">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09">Day 09</a>
+/
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09-15/projects_users/274350">15 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-c-day-09">
+<div class="block-item parent piscine-c-day-09 project-item" data-cursus="piscine-c piscine-c-decloisonnee" data-parent-name="piscine-c-day-09" data-project-occurence="0" id="piscine-c-day-09">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09">Day 09</a>
+/
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09-16/projects_users/274355">16 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-c-day-09">
+<div class="block-item parent piscine-c-day-09 project-item" data-cursus="piscine-c piscine-c-decloisonnee" data-parent-name="piscine-c-day-09" data-project-occurence="0" id="piscine-c-day-09">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09">Day 09</a>
+/
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09-17/projects_users/274356">17 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-c-day-09">
+<div class="block-item parent piscine-c-day-09 project-item" data-cursus="piscine-c piscine-c-decloisonnee" data-parent-name="piscine-c-day-09" data-project-occurence="0" id="piscine-c-day-09">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09">Day 09</a>
+/
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09-18/projects_users/274357">18 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-c-day-09">
+<div class="block-item parent piscine-c-day-09 project-item" data-cursus="piscine-c piscine-c-decloisonnee" data-parent-name="piscine-c-day-09" data-project-occurence="0" id="piscine-c-day-09">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09">Day 09</a>
+/
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09-19/projects_users/274358">19 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-c-day-09">
+<div class="block-item parent piscine-c-day-09 project-item" data-cursus="piscine-c piscine-c-decloisonnee" data-parent-name="piscine-c-day-09" data-project-occurence="0" id="piscine-c-day-09">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09">Day 09</a>
+/
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09-20/projects_users/274359">20 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-c-day-09">
+<div class="block-item parent piscine-c-day-09 project-item" data-cursus="piscine-c piscine-c-decloisonnee" data-parent-name="piscine-c-day-09" data-project-occurence="0" id="piscine-c-day-09">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09">Day 09</a>
+/
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09-21/projects_users/280284">21 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-c-day-09">
+<div class="block-item parent piscine-c-day-09 project-item" data-cursus="piscine-c piscine-c-decloisonnee" data-parent-name="piscine-c-day-09" data-project-occurence="0" id="piscine-c-day-09">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09">Day 09</a>
+/
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09-22/projects_users/280285">22 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-c-day-09">
+<div class="block-item parent piscine-c-day-09 project-item" data-cursus="piscine-c piscine-c-decloisonnee" data-parent-name="piscine-c-day-09" data-project-occurence="0" id="piscine-c-day-09">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09">Day 09</a>
+/
+<a href="https://projects.intra.42.fr/projects/piscine-c-day-09-23/projects_users/280286">23 #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="42 wethinkcode_ starfleet" data-project="21sh" data-target=".21sh.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/21sh/projects_users/445264">21sh</a></span>
+<span class="project-item-lighteable" data-long-date="2017-03-30 11:07:10 +0200"></span>
+<span class="caret"></span>
+<div class="icon-check-1 pull-right text-success">
+107
+</div>
+</div>
+<div class="21sh collapsable collapse">
+<div class="block-item project-item" data-cursus="42 wethinkcode_ starfleet" data-parent-name="" data-project-occurence="0" id="21sh">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/21sh/projects_users/445264">21sh #1</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+107
+</div>
+</span>
+</div>
+</div>
+<div class="21sh collapsable collapse">
+<div class="block-item project-item" data-cursus="42 wethinkcode_ starfleet" data-parent-name="" data-project-occurence="1" id="21sh">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/21sh/projects_users/445264">21sh #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-danger">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="42 formation-pole-emploi" data-project="42-formation-pole-emploi-42-commandements" data-target=".42-formation-pole-emploi-42-commandements.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/42-formation-pole-emploi-42-commandements/projects_users/427929">42 Commandements</a></span>
+<span class="project-item-lighteable" data-long-date="2016-11-02 10:03:32 +0100"></span>
+<span class=""></span>
+<div class="icon-check-1 pull-right text-success">
+100
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="42 wethinkcode_ starfleet" data-project="42sh" data-target=".42sh.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/42sh/projects_users/487972">42sh</a></span>
+<span class="project-item-lighteable" data-long-date="2018-05-13 14:14:32 +0200"></span>
+<span class="caret"></span>
+<div class="icon-check-1 pull-right text-success">
+78
+</div>
+</div>
+<div class="42sh collapsable collapse">
+<div class="block-item project-item" data-cursus="42 wethinkcode_ starfleet" data-parent-name="" data-project-occurence="0" id="42sh">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/42sh/projects_users/487972">42sh #1</a>
+<span class="project-item-lighteable" data-long-date="2018-05-13 14:14:29 +0200"></span>
+<div class="pull-right text-success">
+78
+</div>
+</span>
+</div>
+</div>
+<div class="42sh collapsable collapse">
+<div class="block-item project-item" data-cursus="42 wethinkcode_ starfleet" data-parent-name="" data-project-occurence="1" id="42sh">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/42sh/projects_users/487972">42sh #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+75
+</div>
+</span>
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="42 wethinkcode_ formation-pole-emploi" data-project="c-exam-alone-in-the-dark-beginner" data-target=".c-exam-alone-in-the-dark-beginner.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/c-exam-alone-in-the-dark-beginner/projects_users/427941">C Exam Alone In The Dark - Beginner</a></span>
+<span class="project-item-lighteable" data-long-date="2017-01-31 10:13:41 +0100"></span>
+<span class="caret"></span>
+<div class="icon-check-1 pull-right text-success">
+78
+</div>
+</div>
+<div class="c-exam-alone-in-the-dark-beginner collapsable collapse">
+<div class="block-item project-item" data-cursus="42 wethinkcode_ formation-pole-emploi" data-parent-name="" data-project-occurence="0" id="c-exam-alone-in-the-dark-beginner">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/c-exam-alone-in-the-dark-beginner/projects_users/427941">C Exam Alone In The Dark - Beginner #7</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+80
+</div>
+</span>
+</div>
+</div>
+<div class="c-exam-alone-in-the-dark-beginner collapsable collapse">
+<div class="block-item project-item" data-cursus="42 wethinkcode_ formation-pole-emploi" data-parent-name="" data-project-occurence="7" id="c-exam-alone-in-the-dark-beginner">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/c-exam-alone-in-the-dark-beginner/projects_users/427941">C Exam Alone In The Dark - Beginner #6</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+75
+</div>
+</span>
+</div>
+</div>
+<div class="c-exam-alone-in-the-dark-beginner collapsable collapse">
+<div class="block-item project-item" data-cursus="42 wethinkcode_ formation-pole-emploi" data-parent-name="" data-project-occurence="6" id="c-exam-alone-in-the-dark-beginner">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/c-exam-alone-in-the-dark-beginner/projects_users/427941">C Exam Alone In The Dark - Beginner #5</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+80
+</div>
+</span>
+</div>
+</div>
+<div class="c-exam-alone-in-the-dark-beginner collapsable collapse">
+<div class="block-item project-item" data-cursus="42 wethinkcode_ formation-pole-emploi" data-parent-name="" data-project-occurence="5" id="c-exam-alone-in-the-dark-beginner">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/c-exam-alone-in-the-dark-beginner/projects_users/427941">C Exam Alone In The Dark - Beginner #4</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-danger">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="c-exam-alone-in-the-dark-beginner collapsable collapse">
+<div class="block-item project-item" data-cursus="42 wethinkcode_ formation-pole-emploi" data-parent-name="" data-project-occurence="4" id="c-exam-alone-in-the-dark-beginner">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/c-exam-alone-in-the-dark-beginner/projects_users/427941">C Exam Alone In The Dark - Beginner #3</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+80
+</div>
+</span>
+</div>
+</div>
+<div class="c-exam-alone-in-the-dark-beginner collapsable collapse">
+<div class="block-item project-item" data-cursus="42 wethinkcode_ formation-pole-emploi" data-parent-name="" data-project-occurence="3" id="c-exam-alone-in-the-dark-beginner">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/c-exam-alone-in-the-dark-beginner/projects_users/427941">C Exam Alone In The Dark - Beginner #2</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+75
+</div>
+</span>
+</div>
+</div>
+<div class="c-exam-alone-in-the-dark-beginner collapsable collapse">
+<div class="block-item project-item" data-cursus="42 wethinkcode_ formation-pole-emploi" data-parent-name="" data-project-occurence="2" id="c-exam-alone-in-the-dark-beginner">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/c-exam-alone-in-the-dark-beginner/projects_users/427941">C Exam Alone In The Dark - Beginner #1</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-danger">
+54
+</div>
+</span>
+</div>
+</div>
+<div class="c-exam-alone-in-the-dark-beginner collapsable collapse">
+<div class="block-item project-item" data-cursus="42 wethinkcode_ formation-pole-emploi" data-parent-name="" data-project-occurence="1" id="c-exam-alone-in-the-dark-beginner">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/c-exam-alone-in-the-dark-beginner/projects_users/427941">C Exam Alone In The Dark - Beginner #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-danger">
+44
+</div>
+</span>
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="42 wethinkcode_" data-project="dr-quine" data-target=".dr-quine.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/dr-quine/projects_users/829530">Dr Quine</a></span>
+<span class="project-item-lighteable" data-long-date="2018-04-26 14:42:56 +0200"></span>
+<span class="caret"></span>
+<div class="icon-check-1 pull-right text-success">
+125
+</div>
+</div>
+<div class="collapsable collapse dr-quine">
+<div class="block-item project-item" data-cursus="42 wethinkcode_" data-parent-name="" data-project-occurence="0" id="dr-quine">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/dr-quine/projects_users/829530">Dr Quine #1</a>
+<span class="project-item-lighteable" data-long-date="2018-04-26 14:42:55 +0200"></span>
+<div class="pull-right text-success">
+125
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse dr-quine">
+<div class="block-item project-item" data-cursus="42 wethinkcode_" data-parent-name="" data-project-occurence="1" id="dr-quine">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/dr-quine/projects_users/829530">Dr Quine #0</a>
+<span class="project-item-lighteable" data-long-date="2018-04-11 16:21:39 +0200"></span>
+<div class="pull-right text-danger">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="42 wethinkcode_ formation-pole-emploi" data-project="fdf" data-target=".fdf.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/fdf/projects_users/446148">FdF</a></span>
+<span class="project-item-lighteable" data-long-date="2017-01-02 13:57:33 +0100"></span>
+<span class="caret"></span>
+<div class="icon-check-1 pull-right text-success">
+106
+</div>
+</div>
+<div class="collapsable collapse fdf">
+<div class="block-item project-item" data-cursus="42 wethinkcode_ formation-pole-emploi" data-parent-name="" data-project-occurence="0" id="fdf">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/fdf/projects_users/446148">FdF #1</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+106
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse fdf">
+<div class="block-item project-item" data-cursus="42 wethinkcode_ formation-pole-emploi" data-parent-name="" data-project-occurence="1" id="fdf">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/fdf/projects_users/446148">FdF #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-danger">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="42 formation-pole-emploi" data-project="fillit" data-target=".fillit.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/fillit/projects_users/438532">Fillit</a></span>
+<span class="project-item-lighteable" data-long-date="2017-12-15 14:48:55 +0100"></span>
+<span class="caret"></span>
+<div class="icon-check-1 pull-right text-success">
+100
+</div>
+</div>
+<div class="collapsable collapse fillit">
+<div class="block-item project-item" data-cursus="42 formation-pole-emploi" data-parent-name="" data-project-occurence="0" id="fillit">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/fillit/projects_users/438532">Fillit #2</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+100
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse fillit">
+<div class="block-item project-item" data-cursus="42 formation-pole-emploi" data-parent-name="" data-project-occurence="2" id="fillit">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/fillit/projects_users/438532">Fillit #1</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-danger">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse fillit">
+<div class="block-item project-item" data-cursus="42 formation-pole-emploi" data-parent-name="" data-project-occurence="1" id="fillit">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/fillit/projects_users/438532">Fillit #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+100
+</div>
+</span>
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="42 wethinkcode_ starfleet" data-project="ft_ls" data-target=".ft_ls.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/ft_ls/projects_users/442785">ft_ls</a></span>
+<span class="project-item-lighteable" data-long-date="2016-12-05 17:27:55 +0100"></span>
+<span class=""></span>
+<div class="icon-check-1 pull-right text-success">
+103
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="42 wethinkcode_ starfleet" data-project="ft_select" data-target=".ft_select.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/ft_select/projects_users/445265">ft_select</a></span>
+<span class="project-item-lighteable" data-long-date="2017-01-03 19:24:04 +0100"></span>
+<span class="caret"></span>
+<div class="icon-check-1 pull-right text-success">
+87
+</div>
+</div>
+<div class="collapsable collapse ft_select">
+<div class="block-item project-item" data-cursus="42 wethinkcode_ starfleet" data-parent-name="" data-project-occurence="0" id="ft_select">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/ft_select/projects_users/445265">ft_select #2</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+87
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse ft_select">
+<div class="block-item project-item" data-cursus="42 wethinkcode_ starfleet" data-parent-name="" data-project-occurence="2" id="ft_select">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/ft_select/projects_users/445265">ft_select #1</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-danger">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse ft_select">
+<div class="block-item project-item" data-cursus="42 wethinkcode_ starfleet" data-parent-name="" data-project-occurence="1" id="ft_select">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/ft_select/projects_users/445265">ft_select #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-danger">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="42 wethinkcode_ formation-pole-emploi starfleet" data-project="get_next_line" data-target=".get_next_line.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/get_next_line/projects_users/441818">Get_Next_Line</a></span>
+<span class="project-item-lighteable" data-long-date="2016-11-30 10:33:49 +0100"></span>
+<span class="caret"></span>
+<div class="icon-check-1 pull-right text-success">
+120
+</div>
+</div>
+<div class="collapsable collapse get_next_line">
+<div class="block-item project-item" data-cursus="42 wethinkcode_ formation-pole-emploi starfleet" data-parent-name="" data-project-occurence="0" id="get_next_line">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/get_next_line/projects_users/441818">Get_Next_Line #1</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+120
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse get_next_line">
+<div class="block-item project-item" data-cursus="42 wethinkcode_ formation-pole-emploi starfleet" data-parent-name="" data-project-occurence="1" id="get_next_line">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/get_next_line/projects_users/441818">Get_Next_Line #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-danger">
+61
+</div>
+</span>
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="42 wethinkcode_ formation-pole-emploi" data-project="libft" data-target=".libft.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/libft/projects_users/432104">Libft</a></span>
+<span class="project-item-lighteable" data-long-date="2016-11-11 10:53:22 +0100"></span>
+<span class="caret"></span>
+<div class="icon-check-1 pull-right text-success">
+116
+</div>
+</div>
+<div class="collapsable collapse libft">
+<div class="block-item project-item" data-cursus="42 wethinkcode_ formation-pole-emploi" data-parent-name="" data-project-occurence="0" id="libft">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/libft/projects_users/432104">Libft #1</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+116
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse libft">
+<div class="block-item project-item" data-cursus="42 wethinkcode_ formation-pole-emploi" data-parent-name="" data-project-occurence="1" id="libft">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/libft/projects_users/432104">Libft #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-danger">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="42 wethinkcode_" data-project="libftasm" data-target=".libftasm.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/libftasm/projects_users/836204">LibftASM</a></span>
+<span class="project-item-lighteable" data-long-date="2018-05-10 13:10:16 +0200"></span>
+<span class="caret"></span>
+<div class="icon-cross-1 pull-right text-danger">
+0
+</div>
+</div>
+<div class="collapsable collapse libftasm">
+<div class="block-item project-item" data-cursus="42 wethinkcode_" data-parent-name="" data-project-occurence="0" id="libftasm">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/libftasm/projects_users/836204">LibftASM #0</a>
+<span class="project-item-lighteable" data-long-date="2018-04-20 10:55:17 +0200"></span>
+<div class="pull-right text-danger">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="42 wethinkcode_ starfleet" data-project="malloc" data-target=".malloc.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/malloc/projects_users/761385">Malloc</a></span>
+<span class="project-item-lighteable" data-long-date="2018-02-19 09:39:54 +0100"></span>
+<span class="caret"></span>
+<div class="icon-check-1 pull-right text-success">
+113
+</div>
+</div>
+<div class="collapsable collapse malloc">
+<div class="block-item project-item" data-cursus="42 wethinkcode_ starfleet" data-parent-name="" data-project-occurence="0" id="malloc">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/malloc/projects_users/761385">Malloc #1</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+113
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse malloc">
+<div class="block-item project-item" data-cursus="42 wethinkcode_ starfleet" data-parent-name="" data-project-occurence="1" id="malloc">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/malloc/projects_users/761385">Malloc #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-danger">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="42 wethinkcode_" data-project="minishell" data-target=".minishell.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/minishell/projects_users/443939">minishell</a></span>
+<span class="project-item-lighteable" data-long-date="2016-12-14 12:06:40 +0100"></span>
+<span class="caret"></span>
+<div class="icon-check-1 pull-right text-success">
+107
+</div>
+</div>
+<div class="collapsable collapse minishell">
+<div class="block-item project-item" data-cursus="42 wethinkcode_" data-parent-name="" data-project-occurence="0" id="minishell">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/minishell/projects_users/443939">minishell #1</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+107
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse minishell">
+<div class="block-item project-item" data-cursus="42 wethinkcode_" data-parent-name="" data-project-occurence="1" id="minishell">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/minishell/projects_users/443939">minishell #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-danger">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="42 wethinkcode_ starfleet" data-project="nm-otool" data-target=".nm-otool.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/nm-otool/projects_users/811414">Nm-otool</a></span>
+<span class="project-item-lighteable" data-long-date="2018-04-09 16:26:20 +0200"></span>
+<span class="caret"></span>
+<div class="icon-check-1 pull-right text-success">
+90
+</div>
+</div>
+<div class="collapsable collapse nm-otool">
+<div class="block-item project-item" data-cursus="42 wethinkcode_ starfleet" data-parent-name="" data-project-occurence="0" id="nm-otool">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/nm-otool/projects_users/811414">Nm-otool #3</a>
+<span class="project-item-lighteable" data-long-date="2018-04-09 16:26:20 +0200"></span>
+<div class="pull-right text-success">
+90
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse nm-otool">
+<div class="block-item project-item" data-cursus="42 wethinkcode_ starfleet" data-parent-name="" data-project-occurence="3" id="nm-otool">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/nm-otool/projects_users/811414">Nm-otool #2</a>
+<span class="project-item-lighteable" data-long-date="2018-03-28 14:49:24 +0200"></span>
+<div class="pull-right text-danger">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse nm-otool">
+<div class="block-item project-item" data-cursus="42 wethinkcode_ starfleet" data-parent-name="" data-project-occurence="2" id="nm-otool">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/nm-otool/projects_users/811414">Nm-otool #1</a>
+<span class="project-item-lighteable" data-long-date="2018-03-21 10:14:50 +0100"></span>
+<div class="pull-right text-danger">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse nm-otool">
+<div class="block-item project-item" data-cursus="42 wethinkcode_ starfleet" data-parent-name="" data-project-occurence="1" id="nm-otool">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/nm-otool/projects_users/811414">Nm-otool #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-danger">
+0
+</div>
+</span>
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="piscine-c piscine-c-decloisonnee" data-project="piscine-c-bsq" data-target=".piscine-c-bsq.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/piscine-c-bsq/projects_users/307094">BSQ</a></span>
+<span class="project-item-lighteable" data-long-date="2016-07-28 10:54:13 +0200"></span>
+<span class=""></span>
+<div class="icon-check-1 pull-right text-success">
+100
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="piscine-c piscine-c-decloisonnee 42partnerships 42-labs" data-project="piscine-c-day-00" data-target=".piscine-c-day-00.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/piscine-c-day-00/projects_users/260900">Day 00</a></span>
+<span class="project-item-lighteable" data-long-date="2016-07-23 03:45:12 +0200"></span>
+<span class=""></span>
+<div class="icon-cross-1 pull-right text-danger">
+5
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="piscine-c piscine-c-decloisonnee 42partnerships 42-labs" data-project="piscine-c-day-01" data-target=".piscine-c-day-01.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/piscine-c-day-01/projects_users/261826">Day 01</a></span>
+<span class="project-item-lighteable" data-long-date="2016-07-23 03:59:37 +0200"></span>
+<span class=""></span>
+<div class="icon-cross-1 pull-right text-danger">
+0
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="piscine-c piscine-c-decloisonnee 42partnerships 42-labs" data-project="piscine-c-day-02" data-target=".piscine-c-day-02.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/piscine-c-day-02/projects_users/261831">Day 02</a></span>
+<span class="project-item-lighteable" data-long-date="2016-07-23 04:18:10 +0200"></span>
+<span class=""></span>
+<div class="icon-cross-1 pull-right text-danger">
+0
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="piscine-c piscine-c-decloisonnee 42partnerships 42-labs" data-project="piscine-c-day-03" data-target=".piscine-c-day-03.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/piscine-c-day-03/projects_users/261832">Day 03</a></span>
+<span class="project-item-lighteable" data-long-date="2016-08-06 11:58:54 +0200"></span>
+<span class=""></span>
+<div class="icon-check-1 pull-right text-success">
+50
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="piscine-c piscine-c-decloisonnee 42partnerships 42-labs" data-project="piscine-c-day-04" data-target=".piscine-c-day-04.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/piscine-c-day-04/projects_users/266226">Day 04</a></span>
+<span class="project-item-lighteable" data-long-date="2016-08-06 12:07:04 +0200"></span>
+<span class=""></span>
+<div class="icon-cross-1 pull-right text-danger">
+0
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="piscine-c piscine-c-decloisonnee 42partnerships 42-labs" data-project="piscine-c-day-05" data-target=".piscine-c-day-05.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/piscine-c-day-05/projects_users/268156">Day 05</a></span>
+<span class="project-item-lighteable" data-long-date="2016-07-23 05:10:46 +0200"></span>
+<span class=""></span>
+<div class="icon-check-1 pull-right text-success">
+64
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="piscine-c piscine-c-decloisonnee 42partnerships 42-labs" data-project="piscine-c-day-06" data-target=".piscine-c-day-06.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/piscine-c-day-06/projects_users/269738">Day 06</a></span>
+<span class="project-item-lighteable" data-long-date="2016-07-14 15:19:23 +0200"></span>
+<span class=""></span>
+<div class="icon-cross-1 pull-right text-danger">
+20
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="piscine-c piscine-c-decloisonnee 42partnerships 42-labs" data-project="piscine-c-day-07" data-target=".piscine-c-day-07.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/piscine-c-day-07/projects_users/269741">Day 07</a></span>
+<span class="project-item-lighteable" data-long-date="2016-07-15 23:45:40 +0200"></span>
+<span class=""></span>
+<div class="icon-cross-1 pull-right text-danger">
+0
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="piscine-c 42partnerships piscine-c-decloisonnee 42-labs" data-project="piscine-c-day-08" data-target=".piscine-c-day-08.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/piscine-c-day-08/projects_users/271227">Day 08</a></span>
+<span class="project-item-lighteable" data-long-date="2016-07-17 15:00:03 +0200"></span>
+<span class=""></span>
+<div class="icon-cross-1 pull-right text-danger">
+0
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="piscine-c piscine-c-decloisonnee 42-labs" data-project="piscine-c-day-10" data-target=".piscine-c-day-10.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/piscine-c-day-10/projects_users/299486">Day 10</a></span>
+<span class="project-item-lighteable" data-long-date="2016-07-23 18:10:31 +0200"></span>
+<span class=""></span>
+<div class="icon-cross-1 pull-right text-danger">
+20
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="piscine-c piscine-c-decloisonnee 42-labs" data-project="piscine-c-day-11" data-target=".piscine-c-day-11.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/piscine-c-day-11/projects_users/300758">Day 11</a></span>
+<span class="project-item-lighteable" data-long-date="2016-07-23 20:03:08 +0200"></span>
+<span class=""></span>
+<div class="icon-cross-1 pull-right text-danger">
+21
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="piscine-c piscine-c-decloisonnee 42-labs" data-project="piscine-c-day-12" data-target=".piscine-c-day-12.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/piscine-c-day-12/projects_users/300759">Day 12</a></span>
+<span class="project-item-lighteable" data-long-date="2016-07-23 19:53:17 +0200"></span>
+<span class=""></span>
+<div class="icon-cross-1 pull-right text-danger">
+16
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="piscine-c piscine-c-decloisonnee 42-labs" data-project="piscine-c-day-13" data-target=".piscine-c-day-13.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/piscine-c-day-13/projects_users/302329">Day 13</a></span>
+<span class="project-item-lighteable" data-long-date="2016-07-23 20:03:03 +0200"></span>
+<span class=""></span>
+<div class="icon-cross-1 pull-right text-danger">
+10
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="piscine-c piscine-c-decloisonnee" data-project="piscine-c-evalexpr" data-target=".piscine-c-evalexpr.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/piscine-c-evalexpr/projects_users/308046">EvalExpr</a></span>
+<span class="project-item-lighteable" data-long-date="2016-07-25 17:45:54 +0200"></span>
+<span class=""></span>
+<div class="icon-check-1 pull-right text-success">
+100
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="piscine-c piscine-c-decloisonnee 42-labs" data-project="piscine-c-exam00" data-target=".piscine-c-exam00.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/piscine-c-exam00/projects_users/266224">Exam00</a></span>
+<span class="project-item-lighteable" data-long-date="2016-07-08 18:44:39 +0200"></span>
+<span class=""></span>
+<div class="icon-check-1 pull-right text-success">
+90
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="piscine-c piscine-c-decloisonnee 42-labs" data-project="piscine-c-exam01" data-target=".piscine-c-exam01.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/piscine-c-exam01/projects_users/280282">Exam01</a></span>
+<span class="project-item-lighteable" data-long-date="2016-07-15 19:55:45 +0200"></span>
+<span class=""></span>
+<div class="icon-check-1 pull-right text-success">
+50
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="piscine-c piscine-c-decloisonnee 42-labs" data-project="piscine-c-exam02" data-target=".piscine-c-exam02.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/piscine-c-exam02/projects_users/308044">Exam02</a></span>
+<span class="project-item-lighteable" data-long-date="2016-07-22 19:30:55 +0200"></span>
+<span class=""></span>
+<div class="icon-check-1 pull-right text-success">
+70
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="piscine-c piscine-c-decloisonnee 42-labs" data-project="piscine-c-exam-final" data-target=".piscine-c-exam-final.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/piscine-c-exam-final/projects_users/310996">Exam Final</a></span>
+<span class="project-item-lighteable" data-long-date="2016-07-29 13:04:28 +0200"></span>
+<span class=""></span>
+<div class="icon-check-1 pull-right text-success">
+72
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="piscine-c piscine-c-decloisonnee" data-project="piscine-c-match-n-match" data-target=".piscine-c-match-n-match.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/piscine-c-match-n-match/projects_users/280283">Match-N-Match</a></span>
+<span class="project-item-lighteable" data-long-date="2016-07-20 18:21:08 +0200"></span>
+<span class=""></span>
+<div class="icon-cross-1 pull-right text-danger">
+0
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="piscine-c piscine-c-decloisonnee 42partnerships 42-labs" data-project="piscine-c-rush-00" data-target=".piscine-c-rush-00.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/piscine-c-rush-00/projects_users/267653">Rush 00</a></span>
+<span class="project-item-lighteable" data-long-date="2016-08-09 00:43:39 +0200"></span>
+<span class=""></span>
+<div class="icon-cross-1 pull-right text-danger">
+0
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="piscine-c piscine-c-decloisonnee" data-project="piscine-c-rush-01" data-target=".piscine-c-rush-01.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/piscine-c-rush-01/projects_users/281305">Rush 01</a></span>
+<span class="project-item-lighteable" data-long-date="2016-08-09 00:10:32 +0200"></span>
+<span class=""></span>
+<div class="icon-cross-1 pull-right text-danger">
+0
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="piscine-c piscine-c-decloisonnee" data-project="piscine-c-rush-02" data-target=".piscine-c-rush-02.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/piscine-c-rush-02/projects_users/308045">Rush 02</a></span>
+<span class="project-item-lighteable" data-long-date="2016-08-09 00:12:17 +0200"></span>
+<span class=""></span>
+<div class="icon-check-1 pull-right text-success">
+100
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="piscine-c piscine-c-decloisonnee 42partnerships 42-labs" data-project="piscine-c-sastantua" data-target=".piscine-c-sastantua.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/piscine-c-sastantua/projects_users/267654">Sastantua</a></span>
+<span class="project-item-lighteable" data-long-date="2016-07-15 22:15:20 +0200"></span>
+<span class=""></span>
+<div class="icon-check-1 pull-right text-success">
+100
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="42 formation-pole-emploi bootcamp" data-project="piscine-reloaded" data-target=".piscine-reloaded.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/piscine-reloaded/projects_users/427994">Piscine Reloaded</a></span>
+<span class="project-item-lighteable" data-long-date="2016-11-03 10:50:09 +0100"></span>
+<span class="caret"></span>
+<div class="icon-check-1 pull-right text-success">
+100
+</div>
+</div>
+<div class="collapsable collapse piscine-reloaded">
+<div class="block-item project-item" data-cursus="42 formation-pole-emploi bootcamp" data-parent-name="" data-project-occurence="0" id="piscine-reloaded">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-reloaded/projects_users/427994">Piscine Reloaded #1</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-success">
+100
+</div>
+</span>
+</div>
+</div>
+<div class="collapsable collapse piscine-reloaded">
+<div class="block-item project-item" data-cursus="42 formation-pole-emploi bootcamp" data-parent-name="" data-project-occurence="1" id="piscine-reloaded">
+<span class="marked-title">
+<a href="https://projects.intra.42.fr/projects/piscine-reloaded/projects_users/427994">Piscine Reloaded #0</a>
+<span class="project-item-lighteable" data-long-date="2018-03-20 15:24:37 +0100"></span>
+<div class="pull-right text-danger">
+15
+</div>
+</span>
+</div>
+</div>
+<div class="project-item block-item main-project-item dropdown-toggle" data-cursus="42" data-project="savoir-relier" data-target=".savoir-relier.collapsable" data-toggle="collapse">
+<span class="marked-title"><a href="https://projects.intra.42.fr/projects/savoir-relier/projects_users/438556">Savoir Relier</a></span>
+<span class="project-item-lighteable" data-long-date="2016-12-07 10:43:05 +0100"></span>
+<span class=""></span>
+<div class="icon-check-1 pull-right text-success">
+100
+</div>
+</div>
+</div>
+</div>
+<div class="tab-pane overflowable-item" id="forum" role="tabpanel"></div>
+<div class="tab-pane overflowable-item" id="achievements" role="tabpanel">
+<h4 class="profile-title">
+Last Achievements
+<a class="simple-link pull-right" href="/users/jcarra/achievements">See all achievements</a>
+</h4>
+<div class="col-sm-12">
+<div class="achievement-item col-sm-6 col-xs-12">
+<div class="achievement-item--container" data-done="">
+<div class="achievement-item--content">
+<h1>
+Attendee 3
+</h1>
+<p>Assister à 10 conférences.</p>
+<div class="achievement-item--status">
+<div class="icon icon-check-4"></div>
+<div class="achieved">
+<h6>Achieved</h6>
+<p>17 May 2018</p>
+</div>
+</div>
+</div>
+<div class="achievement-item--image">
+<img src="https://cdn.intra.42.fr/achievement/image/56/SCO003.svg">
+<div class="achievement-item--tier" data-tier="easy"></div>
+</div>
+</div>
+</div>
+<div class="achievement-item col-sm-6 col-xs-12">
+<div class="achievement-item--container" data-done="">
+<div class="achievement-item--content">
+<h1>
+Perfectionnist 1
+</h1>
+<p>Valider et refaire 1 projet.</p>
+<div class="achievement-item--status">
+<div class="icon icon-check-4"></div>
+<div class="achieved">
+<h6>Achieved</h6>
+<p>13 May 2018</p>
+</div>
+</div>
+</div>
+<div class="achievement-item--image">
+<img src="https://cdn.intra.42.fr/achievement/image/12/PRO004.svg">
+</div>
+</div>
+</div>
+<div class="achievement-item col-sm-6 col-xs-12">
+<div class="achievement-item--container" data-done="">
+<div class="achievement-item--content">
+<h1>
+Film buff 3
+</h1>
+<p>Regarder 10 videos sur l'e-learning.</p>
+<div class="achievement-item--status">
+<div class="icon icon-check-4"></div>
+<div class="achieved">
+<h6>Achieved</h6>
+<p>06 Mar 2018</p>
+</div>
+</div>
+</div>
+<div class="achievement-item--image">
+<img src="https://cdn.intra.42.fr/achievement/image/48/PED005.svg">
+</div>
+</div>
+</div>
+<div class="achievement-item col-sm-6 col-xs-12">
+<div class="achievement-item--container" data-done="">
+<div class="achievement-item--content">
+<h1>
+Je voudrais un croissant 
+</h1>
+<p>Visiter le campus de Paris</p>
+<div class="achievement-item--status">
+<div class="icon icon-check-4"></div>
+<div class="achieved">
+<h6>Achieved</h6>
+<p>13 Dec 2017</p>
+</div>
+</div>
+</div>
+<div class="achievement-item--image">
+<img src="https://cdn.intra.42.fr/achievement/image/155/BADGE_SCOLARITY_paris.svg">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="overflowable-item tab-pane" id="patronages" role="tabpanel">
+<div class="col-sm-12">
+<div class="col-sm-6">
+<h3 class="note-title">
+not patroning anyone
+</h3>
+</div>
+<div class="col-sm-6">
+<h3 class="note-title">no patron</h3>
+</div>
+</div>
+</div>
+<div class="overflowable-item tab-pane" id="notes" role="tabpanel">
+<div class="vertical-list">
+<div class="vertical-list-item">
+<a class="btn btn-primary btn-block" data-selector=".notes-form" data-smart-modal="" data-url="/users/jcarra/notes/new">Create new note</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-sm-12 fixed-height">
+<div class="container-inner-item boxed" data-turbolinks-scaffold="inside">
+<h4 class="profile-title">
+<a href="https://projects.intra.42.fr/projects/graph?login=jcarra">Projects</a>
+<div class="pull-right title-container">
+<div class="school-record-container">
+<button class="school-record-button dropdown-toggle" data-toggle="dropdown">
+School Record
+</button>
+<ul class="dropdown-menu" id="school-record-dropdown-menu" role="menu" style="text-align: center; padding: 10px;">
+<form action="https://projects.intra.42.fr/users/19023/school_records/2/generate.pdf" method="post" target="_blank">
+<div class="form-group">
+<label>Start Year</label>
+<input class="form-control" max="2018" min="2016" name="start_year" placeholder="2016" type="number">
+</div>
+<div class="form-group">
+<label>End Year</label>
+<input class="form-control" max="2018" min="2016" name="end_year" placeholder="2018" type="number">
+</div>
+<div class="form-group">
+<label>Choose pdf</label>
+<select class="form-control" name="sr_id">
+<option value="2">42 - English</option>
+<option value="1">42 - Français</option>
+[#&lt;SchoolRecord id: 2, content: "&lt;span style='float: left'&gt;![header](https://cdn.in...", language_id: 2, created_at: "2018-01-04 15:29:59", updated_at: "2018-01-25 13:26:10", sign: "sign.png", header: "header.png", footer: "www.42.fr -  @42born2code\r\nAssociation loi 1901 d’...", cursus_id: 1, campus_id: 1&gt;, #&lt;SchoolRecord id: 1, content: "&lt;span style='float: left'&gt;![header](https://cdn.in...", language_id: 1, created_at: "2018-01-04 13:27:30", updated_at: "2018-01-13 15:33:42", sign: "sign.png", header: "header.png", footer: "www.42.fr -  @42born2code\r\nAssociation loi 1901 d’...", cursus_id: 1, campus_id: 1&gt;]</select>
+</div>
+<button class="btn btn-primary" type="submit">Download</button>
+</form>
+</ul>
+</div>
+<a class="simple-link mr-2 ml-2" href="/users/jcarra/correction_point_historics">correction logs</a>
+<a class="simple-link" href="/users/jcarra/quests">quests</a>
+</div>
+</h4>
+<div class="overflowable-item">
+<a class="project-item block-item" data-cursus="42 wethinkcode_" href="https://projects.intra.42.fr/ft_linux/jcarra">ft_linux
+<div class="status pull-right-if-not-mobile">
+<span class="marked-title">
+
+</span>
+</div>
+</a><a class="project-item block-item" data-cursus="42 wethinkcode_" href="https://projects.intra.42.fr/libftasm/jcarra">LibftASM
+<div class="status pull-right-if-not-mobile">
+<span class="marked-title">
+
+</span>
+</div>
+</a>
+</div>
+</div>
+
+</div>
+<div class="col-lg-6 col-sm-12 fixed-height">
+<div class="container-inner-item boxed hide-overflow">
+<h4 class="profile-title">
+Skills
+</h4>
+<div id="skill-chart"></div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="smartModalLabel" class="modal fade" id="smartModal" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button aria-hidden="true" class="close" data-dismiss="modal" type="button">
+x
+</button>
+<h3 id="smartModalLabel">
+
+</h3>
+</div>
+<div class="modal-body">
+<h4 class="note-title"></h4>
+</div>
+<div class="modal-footer">
+<button aria-hidden="true" class="btn" data-dismiss="modal">Cancel</button>
+<button class="send btn btn-primary">Send</button>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="flashModalLabel" class="modal fade" id="flashModal" role="dialog" tabindex="-1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<button aria-hidden="true" class="close" data-dismiss="modal" type="button">
+x
+</button>
+<h3 id="flashModalLabel"></h3>
+</div>
+<div class="modal-body">
+<h4 class="note-title">Flash modal content (raw)</h4>
+</div>
+<div class="modal-footer">
+<button aria-hidden="true" class="btn btn-block btn-default" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div data-cache="true" class="hide"></div>
+
+
+
+
+
+
+</body></html>
