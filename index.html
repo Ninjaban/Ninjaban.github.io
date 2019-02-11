@@ -58,7 +58,7 @@
       var rotate = "rotate(120deg)"
       // create a HTML element for each feature
       var el = document.createElement('div');
-      var al = el.createElement('div');
+      var al = document.createElement('div');
       el.className = 'marker ' + marker.properties.title;
       al.className = 'marker';
       al.style.transform = al.style.transform + rotate;
