@@ -52,17 +52,12 @@
       }]
       };
 
-      var rotateString = "rotate(120deg)";
-
       // add markers to map
       geojson.features.forEach(function(marker) {
 
       // create a HTML element for each feature
       var el = document.createElement('div');
-      el.className = 'marker ' + marker.properties.title;
-      el.style.transform = el.style.transform + rotateString;
-
-      document.getElementsByClassName(marker.properties.title).style.transform = rotateString;
+      el.className = 'marker';
 
       // make a marker for each feature and add to the map
       new mapboxgl.Marker(el)
