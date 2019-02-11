@@ -55,14 +55,16 @@
       // add markers to map
       geojson.features.forEach(function(marker) {
 
+      var rotate = "rotate(120deg)"
       // create a HTML element for each feature
       var el = document.createElement('div');
-      el.className = 'marker';
+      var al = el.createElement('div');
+      al.className = 'marker';
+      al.style.transform = al.style.transform + rotate;
 
       // make a marker for each feature and add to the map
       new mapboxgl.Marker(el)
       .setLngLat(marker.geometry.coordinates)
-      .setRotation(120)
       .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
       .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'))
       .addTo(map);
