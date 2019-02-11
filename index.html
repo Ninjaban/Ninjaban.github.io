@@ -59,8 +59,10 @@
       // create a HTML element for each feature
       var el = document.createElement('div');
       var al = el.createElement('div');
+      el.className = marker.properties.title;
       al.className = 'marker';
       al.style.transform = al.style.transform + rotate;
+      document.getElementbyId(marker.properties.title).appendChild(al);
 
       // make a marker for each feature and add to the map
       new mapboxgl.Marker(el)
