@@ -62,7 +62,7 @@
       el.className = 'marker ' + marker.properties.title;
       el.style.transform = el.style.transform + rotateString;
 
-      document.getElementsByClassName("class").style.transform = rotateString;
+      document.getElementsByClassName(marker.properties.title).style.transform = rotateString;
 
       // make a marker for each feature and add to the map
       new mapboxgl.Marker(el)
