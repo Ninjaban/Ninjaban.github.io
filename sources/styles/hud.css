@@ -1,1 +1,2 @@
-#hud { position: fixed; height: 100px; width: 100%; top:0; left:0; z-index:100; opacity: 0.7; background-color: #6A6A6A; border-style: solid; border-width: 0 0 5px 0; border-color: #434343; }
+ul.horizontal { list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #333; font-family: Verdana,sans-serif; font-size: 15px; line-height: 1.5; z-index: 100; position: fixed; top: 0; left: 0; right: 0; }
+ul.horizontal li { float: left; }
