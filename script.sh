@@ -33,12 +33,12 @@ do
 	    flag: '${value[15]}',
 	    lenght: '${value[16]}',
 	    width: '${value[17]}',
-	    type: '${value[23]}'
+	    type: '${value[23]}',
 	    dest: '${value[25]}',
 	    dtg: '${value[42]}',
 	    dtt: '${value[43]}',
 	    eta: '${value[26]}',
-	    year: '${value[21]}',
+	    year: '${value[21]}'
 	}
     }" >> /tmp/marker.js
     fi

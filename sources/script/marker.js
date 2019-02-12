@@ -16,12 +16,12 @@ var geojson = {
 	    flag: 'AG',
 	    lenght: '81.7900009',
 	    width: '11.3000002',
-	    type: 'General Cargo'
+	    type: 'General Cargo',
 	    dest: 'GREENORE',
 	    dtg: '407',
 	    dtt: '364',
 	    eta: '2017-05-20T08:00:00',
-	    year: '1993',
+	    year: '1993'
 	}
     },{
 	type: 'Feature',
@@ -39,12 +39,12 @@ var geojson = {
 	    flag: 'MT',
 	    lenght: '113.639999',
 	    width: '17.7000008',
-	    type: 'Oil/Chemical Tanker'
+	    type: 'Oil/Chemical Tanker',
 	    dest: 'BILBAO',
 	    dtg: '295',
 	    dtt: '782',
 	    eta: '2017-05-20T16:00:00',
-	    year: '1993',
+	    year: '1993'
 	}
     },{
 	type: 'Feature',
@@ -62,12 +62,12 @@ var geojson = {
 	    flag: 'PT',
 	    lenght: '85.6600037',
 	    width: '13.0200005',
-	    type: 'General Cargo'
+	    type: 'General Cargo',
 	    dest: 'SAINT MALO',
 	    dtg: '183',
 	    dtt: '333',
 	    eta: '2017-05-20T09:00:00',
-	    year: '2001',
+	    year: '2001'
 	}
     }]
 };
