@@ -21,7 +21,7 @@ do
 	type: 'Feature',
 	geometry: {
 	    type: 'Point',
-	    coordinates: [${value[3]}, ${value[4]}]
+	    coordinates: [${value[4]}, ${value[3]}]
 	},
 	properties: {
 	    course: ${value[7]},
