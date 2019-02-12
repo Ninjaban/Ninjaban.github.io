@@ -1,7 +1,7 @@
 // add markers to map
 geojson.features.forEach(function(marker) {
 
-    var rotate = "rotate(" + marker.properties.rotation + "deg)"
+    var rotate = "rotate(" + marker.properties.course + "deg)"
     // create a HTML element for each feature
     var el = document.createElement('div');
     var al = document.createElement('div');
