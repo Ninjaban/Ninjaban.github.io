@@ -1,1 +1,1 @@
-#hud { position: fixe; height: 100px; width: 100%; top:0; left:0; }
+#hud { position: fixed; height: 100px; width: 100%; top:0; left:0; z-index:100; opacity: 0.7; background-color: #6A6A6A; border-style: solid; border-width: 0 0 5px 0; border-color: #434343; }
