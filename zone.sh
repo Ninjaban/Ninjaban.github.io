@@ -38,7 +38,7 @@ do
 	    fi
 	    if [ $i -gt 0 ]
 	    then
-		echo -n "[${latlon[0]}, ${latlon[1]}]" >> /tmp/poly-geojson.js
+		echo -n "[${latlon[1]}, ${latlon[0]}]" >> /tmp/poly-geojson.js
 	    fi
 	    i=$(($i + 1))
 	done
