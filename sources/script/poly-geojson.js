@@ -1,7 +1,7 @@
 map.on('load', function () {
 
     map.addLayer(
-{'id': 'ZONE_001',
+{'id': 'maine',
 	'type': 'fill',
 	'source': {
 	    'type': 'geojson',
