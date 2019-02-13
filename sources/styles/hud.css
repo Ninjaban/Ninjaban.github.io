@@ -2,5 +2,4 @@ ul.horizontal { list-style-type: none; margin: 0; padding: 0; overflow: hidden; 
 ul.horizontal li { float: left; }
 ul.horizontal li a.active { background-color: #4CAF50; }
 ul.horizontal li a { display: inline-block; color: white; text-align: center; padding: 14px 16px; text-decoration: none; }
-ul.horizontal li a.hover { background-color: #2F2F2F; }
 .w3-white, .w3-hover-white:hover { color: #000 !important; }
