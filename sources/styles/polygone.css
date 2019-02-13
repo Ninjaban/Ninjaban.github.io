@@ -8,3 +8,7 @@
     padding: 15px;
     text-align: center;
 }
+
+.mapboxgl-ctrl-top-right {
+    top: 25px;
+}
