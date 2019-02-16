@@ -14,5 +14,5 @@ map.on('load', function () {
 	    }
 	},
 	'layout': {},
-	'paint': { 'fill-color': '#5d727a', 'fill-opacity': 0.9, 'line-color': '#3bb2d0', 'line-width': 2}});
+	'paint': { 'fill-color': '#5d727a', 'fill-opacity': 0.9, 'fill-outline-color': 'rgba(59, 178, 208, 1)' }});
 });
