@@ -6,10 +6,19 @@
     padding: 10px 50px;
 }
 
+.indicateurname
+{
+    margin: 10px;
+}
+
 #f
 {
     font-weight: bold;
     color: red;
+}
+
+.slide-value
+{
     float: right;
     position: relative;
 }
