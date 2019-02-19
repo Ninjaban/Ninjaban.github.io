@@ -6,11 +6,3 @@ output.innerHTML = slider.value; // Display the default slider value
 slider.oninput = function() {
     output.innerHTML = this.value;
 }
-
-var slideCol = document.getElementById("myRange");
-var y = document.getElementById("f");
-y.innerHTML = slideCol.value;
-
-slideCol.oninput = function() {
-    y.innerHTML = this.value;
-}
