@@ -3,6 +3,7 @@
     border-style: solid;
     border-width: 1px;
     max-width: 600px;
+    min-width: 400px;
     padding: 10px 50px;
 }
 
