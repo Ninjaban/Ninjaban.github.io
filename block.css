@@ -1,5 +1,7 @@
 .block { overflow: auto; border: 1px solid gray; border-radius: 5px 15px 15px 5px; padding: 5px; max-height: 150px; }
 .title { width: 80%; float: left; }
+.name { float: left; }
+.number { float: right; }
 .validation { width: 20%; height: 100%; float: right; top: -5px; right: -5px; }
 .button {
     width: 100%;
