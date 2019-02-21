@@ -2,7 +2,7 @@
 .title { width: 100%; overflow: auto; }
 .name { float: left; }
 .number { float: right; }
-.validation { width: 20%; height: 100%; top: -5px; right: -5px; display: block; }
+.validation { width: 20%; height: 100%; display: block; }
 .button {
     width: 100%;
     height: 50%;
