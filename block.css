@@ -1,7 +1,8 @@
 .block { overflow: auto; border: 1px solid gray; border-radius: 5px; padding: 5px; max-height: 150px; }
 .title { width: 80%; float: left; }
 .validation { width: 20%; height: 100%; float: right; border-width: 0 0 0 1px; }
-.button { width: 100%; height: 50%; }
+.button { width: 100%; height: 50%; display: block; }
 .liste { width: 80%; float: left; }
 .oui { background-color: #4CAF50; border-radius: 0 5px 5px 0; }
 .non { background-color: #f44336; border-radius: 0 5px 5px 0; }
+.disabled { opacity: 0.6; cursor: not-allowed; }
