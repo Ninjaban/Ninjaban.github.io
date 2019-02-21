@@ -1,5 +1,5 @@
-.block { overflow: auto; }
-.title { width: 70%; float: left; }
-.validation { width: 30%; height: 100%; float: right; }
+.block { overflow: auto; border: 1px solid gray; border-radius: 5px; }
+.title { width: 80%; float: left; }
+.validation { width: 20%; height: 100%; float: right; }
 .button { width: 100%; height: 50%; }
 .liste { float: left; }
