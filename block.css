@@ -1,11 +1,11 @@
-.block { overflow: auto; border: 1px solid gray; border-radius: 5px 15px 15px 5px; padding: 5px; max-height: 150px; }
-.title { width: 80%; float: left; }
+.block { width: 80%; border: 1px solid gray; border-radius: 5px 0 0 5px; padding: 5px; max-height: 150px; display: block; }
+.title { width: 100%; overflow: auto; }
 .name { float: left; }
 .number { float: right; }
 .validation { width: 20%; height: 100%; float: right; top: -5px; right: -5px; }
 .button {
     width: 100%;
-    height: 50px;
+    height: 50%;
     display: block;
     color: white;
     padding: 15px 32px;
@@ -18,8 +18,7 @@
     cursor: pointer;
 }
 .button:hover { opacity: 0.8; }
-
-.liste { width: 80%; float: left; }
+.liste { width: 100%; float: left; }
 .oui { background-color: #4CAF50; border-radius: 0 15px 0 0; }
 .non { background-color: #f44336; border-radius: 0 0 15px 0; }
 .disabled { opacity: 0.6; cursor: not-allowed; }
