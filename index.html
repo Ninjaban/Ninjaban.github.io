@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="indicateur.css">
     <link rel="stylesheet" type="text/css" href="block.css">
     <script src="slider.js"></script>
+    <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+    <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
   </head>
   <body>
     <div class="indicateurcontainer">
@@ -20,71 +22,8 @@
       </div>
       <div style="height: 20px;"></div>
       <HR>
-      <div style="overflow: scroll; max-height: 400px;">
-	<div style="padding: 5px 0;">
-	  <div class="block">
-	    <div class="title">
-	      <span class="name">NAME</span>
-	      <span class="number">XX %</span>
-	    </div>
-	    <div class="liste">
-	      <ul>
-		<li>POINT 1</li>
-		<li>POINT 2</li>
-		<li>POINT 3</li>
-		<li>POINT 4</li>
-		<li>POINT 5</li>
-	      </ul>
-	    </div>
-	  </div>
-	  <div class="validation">
-	    <button type="button" class="oui button">OUI</button>
-	    <button type="button" class="non button">NON</button>
-	  </div>
-	</div>
-	<div style="padding: 5px 0;">
-	  <div class="block">
-	    <div class="title">
-	      <span class="name">NAME</span>
-	      <span class="number">XX %</span>
-	    </div>
-	    <div class="liste">
-	      <ul>
-		<li>POINT 1</li>
-		<li>POINT 2</li>
-		<li>POINT 3</li>
-		<li>POINT 4</li>
-		<li>POINT 5</li>
-	      </ul>
-	    </div>
-	  </div>
-	  <div class="validation">
-	    <button type="button" class="oui button">OUI</button>
-	    <button type="button" class="non button">NON</button>
-	  </div>
-	</div>
-	<div style="padding: 5px 0;">
-	  <div class="block">
-	    <div class="title">
-	      <span class="name">NAME</span>
-	      <span class="number">XX %</span>
-	    </div>
-	    <div class="liste">
-	      <ul>
-		<li>POINT 1</li>
-		<li>POINT 2</li>
-		<li>POINT 3</li>
-		<li>POINT 4</li>
-		<li>POINT 5</li>
-	      </ul>
-	    </div>
-	  </div>
-	  <div class="validation">
-	    <button type="button" class="oui button">OUI</button>
-	    <button type="button" class="non button">NON</button>
-	  </div>
-	</div>
-      </div>
+      <div id="base-block" style="overflow: scroll; max-height: 400px;"></div>
+      <script src="block.js"></script>
       <script src="slider-value.js"></script>
     </div>
   </body>
