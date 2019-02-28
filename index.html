@@ -13,16 +13,20 @@
   <body>
     <div class="indicateurcontainer">
       <div class="indicateurname">Indicateur de Colision</div>
+
       <div class="slidecontainer">
+	<div class="range-min">0 %</div>
 	<input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+	<div class="range-max">100 %</div>
       </div>
+
       <div class="slide-value">
 	<span id="f"></span>
 	<span>%</span>
       </div>
       <div style="height: 20px;"></div>
       <HR>
-      <div id="base-block" style="overflow: scroll; max-height: 400px;"></div>
+      <div id="base-block" style="overflow: scroll; max-height: 350px; background-color: white; border-radius: 10px 0 10px 0; padding: 10px;"></div>
       <script src="block.js"></script>
       <script src="slider-value.js"></script>
     </div>
