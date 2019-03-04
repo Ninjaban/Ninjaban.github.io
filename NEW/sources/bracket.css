@@ -13078,7 +13078,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child::
         transition: none; } }
     .user-profile-nav a:hover, .user-profile-nav a:focus {
       background-color: #dee2e6; }
-  .user-profile-nav .icon {
+  .user-profile-nav ion-icon {
     display: inline-block;
     width: 20px;
     line-height: 0;
@@ -13690,7 +13690,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child::
   padding-top: 15px;
   padding-left: 15px;
   padding-right: 15px; }
-  .br-pagetitle .icon {
+  .br-pagetitle ion-icon {
     font-size: 70px;
     line-height: 0;
     color: #343a40; }
