@@ -7,7 +7,7 @@
 .slider {
     -webkit-appearance: none;  /* Override default CSS styles */
     appearance: none;
-    width: 80%; /* Full-width */
+    width: 60%; /* Full-width */
     height: 20px;
     border: 2px solid #1074bd;
     border-radius: 10px;
@@ -17,6 +17,8 @@
     -webkit-transition: .2s; /* 0.2 seconds transition on hover */
     transition: opacity .2s;
     display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Mouse-over effects */

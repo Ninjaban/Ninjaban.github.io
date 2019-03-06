@@ -1,4 +1,4 @@
-.block { width: 77%; border: 1px solid gray; border-radius: 5px 0 0 5px; padding: 5px; height: 150px; float: left; }
+.block { width: 77%; border: 1px solid gray; border-radius: 15px 0 0 15px; padding: 5px; height: 150px; float: left; }
 .block-simple { padding: 5px 0; }
 .title { width: 100%; overflow: auto; }
 .name { float: left; }
@@ -9,7 +9,6 @@
     height: 50%;
     display: block;
     color: white;
-    padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
