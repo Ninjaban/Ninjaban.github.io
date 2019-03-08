@@ -1,4 +1,4 @@
-d3.csv("sources/collision.csv").then(function(data) {
+d3.csv("sources/collision.prev").then(function(data) {
     data.forEach(function(element) {
 
 	var blocki = document.createElement('div');

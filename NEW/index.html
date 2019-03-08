@@ -13,8 +13,7 @@
     <link rel="stylesheet" type="text/css" href="sources/slider.css">
 
     <script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
-    <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
-    <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -237,6 +236,21 @@
               <div id="ch1" class="ht-50 tr-y-1 rickshaw_graph"><svg width="264.75" height="50"><g><path d="M0,25Q19.120833333333334,19.291666666666664,22.0625,19.374999999999996C26.474999999999998,19.499999999999996,39.7125,25.0625,44.125,26.25S61.775,30.875,66.1875,31.25S83.8375,30.625,88.25,30S105.89999999999999,24.25,110.31249999999999,25S127.9625,35.625,132.375,37.5S150.02499999999998,43.75,154.43749999999997,43.75S172.0875,38.4375,176.5,37.5S194.15,35.3125,198.5625,34.375S216.21249999999998,27.8125,220.62499999999997,28.125S238.275,37.8125,242.6875,37.5Q245.62916666666666,37.291666666666664,264.75,25L264.75,50Q245.62916666666666,50,242.6875,50C238.275,50,225.03749999999997,50,220.62499999999997,50S202.975,50,198.5625,50S180.9125,50,176.5,50S158.84999999999997,50,154.43749999999997,50S136.7875,50,132.375,50S114.72499999999998,50,110.31249999999999,50S92.6625,50,88.25,50S70.6,50,66.1875,50S48.5375,50,44.125,50S26.474999999999998,50,22.0625,50Q19.120833333333334,50,0,50Z" class="area" fill="rgba(255,255,255,0.5)"></path></g></svg></div>
             </div>
           </div><!-- col-3 -->
+	  <div class="col-sm-6 col-xl-3 mg-t-20 mg-sm-t-0">
+            <div class="bg-purple rounded overflow-hidden">
+              <div class="pd-x-20 pd-t-20 d-flex align-items-center">
+		<ion-icon name="time" style="font-size: 60px; line-height: 0; color: #fff; opacity: 0.7;"></ion-icon>
+                <i class="ion ion-bag tx-60 lh-0 tx-white op-7"></i>
+                <div class="mg-l-20">
+                  <p class="tx-10 tx-spacing-1 tx-mont tx-semibold tx-uppercase tx-white-8 mg-b-10">Date</p>
+                  <p id="MyClockDisplay" class="tx-24 tx-white tx-lato tx-bold mg-b-0 lh-1 clock"></p>
+                  <span id="MyDateDisplay" class="tx-11 tx-roboto tx-white-8"></span>
+		  <script src="sources/timer.js"></script>
+                </div>
+              </div>
+              <div id="ch3" class="ht-50 tr-y-1 rickshaw_graph"><svg width="271.25" height="50"><g><path d="M0,25Q19.590277777777775,21.458333333333332,22.604166666666664,21.875C27.124999999999996,22.5,40.6875,30.9375,45.20833333333333,31.25S63.29166666666667,26.25,67.8125,25S85.89583333333333,18.75,90.41666666666666,18.75S108.5,23.125,113.02083333333333,25S131.10416666666666,35.625,135.625,37.5S153.70833333333331,43.75,158.22916666666666,43.75S176.31249999999997,38.4375,180.83333333333331,37.5S198.91666666666666,35.3125,203.4375,34.375S221.52083333333331,27.8125,226.04166666666666,28.125S244.12499999999997,37.8125,248.64583333333331,37.5Q251.6597222222222,37.291666666666664,271.25,25L271.25,50Q251.6597222222222,50,248.64583333333331,50C244.12499999999997,50,230.5625,50,226.04166666666666,50S207.95833333333334,50,203.4375,50S185.35416666666666,50,180.83333333333331,50S162.75,50,158.22916666666666,50S140.14583333333334,50,135.625,50S117.54166666666666,50,113.02083333333333,50S94.93749999999999,50,90.41666666666666,50S72.33333333333333,50,67.8125,50S49.72916666666666,50,45.20833333333333,50S27.124999999999996,50,22.604166666666664,50Q19.590277777777775,50,0,50Z" class="area" fill="rgba(255,255,255,0.5)"></path></g></svg></div>
+            </div>
+          </div><!-- col-3 -->
         </div><!-- row -->
 
         <div class="row row-sm mg-t-20">
@@ -245,7 +259,7 @@
               <div class="d-md-flex justify-content-between pd-25">
                 <div>
                   <h6 class="tx-13 tx-uppercase tx-inverse tx-semibold tx-spacing-1">Indicateur de Colision</h6>
-                  <p>Past 3 minutes — Last Updated 14 Mars 2019</p>
+                  <p id="collision-update">Past 3 minutes — Last Updated 14 Mars 2019</p>
                 </div>
                 <div class="d-sm-flex">
 		  <div class="range-min">0 %</div>
@@ -254,8 +268,8 @@
                 </div><!-- d-flex -->
               </div><!-- d-flex -->
 	      <hr>
-	      <div id="base-block" style="overflow: scroll; max-height: 350px; background-color: white; border-radius: 10px 0 10px 0; padding: 10px;"></div>
-	      <script src="sources/block.js"></script>
+	      <div id="base-block" style="overflow: scroll; max-height: 350px; height: 350px; background-color: white; border-radius: 10px 0 10px 0; padding: 10px;"></div>
+	      <script src="sources/update.js"></script>
 	      <script src="sources/slider-value.js"></script>
               <div class="pd-l-25 pd-r-15 pd-b-25">
 
