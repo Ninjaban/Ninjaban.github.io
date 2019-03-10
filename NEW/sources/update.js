@@ -11,12 +11,21 @@ function collision_read() {
     head.appendChild(script);
     status=1
 
+    var slideCol = document.getElementById("myRange").value;
+
     d3.csv("sources/collision.prev").then(function(data) {
 	document.getElementById('base-block').innerHTML = "";
 	data.forEach(function(element) {
 
 	    var blocki = document.createElement('div');
 	    blocki.className = 'block-simple';
+	    if (element.PERCENT < slideCol * 5) {
+		blocki.id = 'hide';
+	    }
+	    else {
+		blocki.id = 'visible';
+	    }
+
 	    var blockc = document.createElement('div');
 	    blockc.className = 'block';
 	    blocki.appendChild(blockc);
@@ -111,6 +120,10 @@ function collision_timer(date, n, max) {
     document.getElementById("collision-update").innerText = string;
     document.getElementById("collision-update").textContent = string;
 
+    var elem = document.getElementById("MyBar");
+    var width = n * 100 / max;
+    elem.style.width = width + '%';
+
     if (n >= max) {
 	collision_update();
     }
@@ -128,3 +141,35 @@ function collision_update() {
 }
 
 collision_update();
+
+
+
+
+
+function precision_read() {
+    var head= document.getElementsByTagName('head')[0];
+    if (status == 1) {
+	script.parentNode.removeChild(script);
+    }
+    script= document.createElement('script');
+    script.src= 'https://d3js.org/d3.v5.min.js';
+    head.appendChild(script);
+    status=1
+
+    d3.csv("sources/precision.prev").then(function(data) {
+	data.forEach(function(element) {
+
+	    document.getElementById('precision-number').innerHTML = element.PRECISION + " %";
+	    document.getElementById('precision-diff').innerHTML = element.DIFF_MSG + element.DIFF + " %";
+
+	});
+	return (data);
+    });
+}
+
+function precision_update() {
+    precision_read();
+    setTimeout(precision_update, 10000);
+}
+
+precision_update();
