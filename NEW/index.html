@@ -242,9 +242,18 @@
                   <p id="collision-update"></p>
                 </div>
                 <div class="d-sm-flex">
-		  <div class="range-min">0 %</div>
-		  <input type="range" min="0" max="20" value="0" class="slider" id="myRange">
-		  <div class="range-max">100 %</div>
+		  <span class="range-slider">
+		    <input id="slider" class="slider" value="0" min="0" max="20" name="rangeslider" type="range" />
+		    <span class="slider-container">
+		      <span class="bar">
+			<span id="bar"></span>
+		      </span>
+		      <span class="bar-btn" id="bar-btn">
+			<span id="bar-btn-span">0</span>
+		      </span>
+		    </span>
+		  </span>
+		  <script src="sources/slider.js"></script>
                 </div><!-- d-flex -->
               </div><!-- d-flex -->
 	      <div id="MyProgress">

@@ -11,7 +11,7 @@ function collision_read() {
     head.appendChild(script);
     status=1
 
-    var slideCol = document.getElementById("myRange").value;
+    var slideCol = document.getElementById("slider").value;
 
     d3.csv("sources/collision.prev").then(function(data) {
 	document.getElementById('base-block').innerHTML = "";
