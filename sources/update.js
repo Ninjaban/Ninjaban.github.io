@@ -137,7 +137,7 @@ function collision_update() {
     collision_read();
 
     var date = new Date();
-    collision_timer(date, 0, 180)
+    collision_timer(date, 0, 300)
 }
 
 collision_update();
