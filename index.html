@@ -1,34 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset='utf-8' />
-    <title>Front</title>
-    <link rel="stylesheet" type="text/css" href="slider.css">
-    <link rel="stylesheet" type="text/css" href="indicateur.css">
-    <link rel="stylesheet" type="text/css" href="block.css">
-    <script src="slider.js"></script>
-    <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
-    <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <div class="indicateurcontainer">
-      <div class="indicateurname">Indicateur de Colision</div>
-
-      <div class="slidecontainer">
-	<div class="range-min">0 %</div>
-	<input type="range" min="0" max="100" value="0" class="slider" id="myRange">
-	<div class="range-max">100 %</div>
-      </div>
-
-      <div class="slide-value">
-	<span id="f"></span>
-	<span>%</span>
-      </div>
-      <div style="height: 20px;"></div>
-      <HR>
-      <div id="base-block" style="overflow: scroll; max-height: 350px; background-color: white; border-radius: 10px 0 10px 0; padding: 10px;"></div>
-      <script src="block.js"></script>
-      <script src="slider-value.js"></script>
-    </div>
+    <span class="range-slider">
+      <input id="slider" class="slider" value="0" min="0" max="20" name="rangeslider" type="range" />
+      <span class="slider-container">
+	<span class="bar">
+	  <span id="bar"></span>
+	</span>
+	<span class="bar-btn" id="bar-btn">
+	  <span id="bar-btn-span">0</span>
+	</span>
+      </span>
+    </span>
+    <script src="script.js"></script>
   </body>
 </html>
