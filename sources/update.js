@@ -6,18 +6,25 @@ var data
 
 
 
+//function openfile(file, string) {
+//    console.log(document.location.toString() + file);
+//    var mywindow = window.open(document.location.toString() + file, "", 'toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no,left=10000, top=10000, width=10, height=10, visible=none');
+//    mywindow.document.writeln(string + "\n");
+//}
+
 function openfile(file, string) {
-    console.log(document.location.toString() + file);
-    var mywindow = window.open(file, "", 'toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no,left=10000, top=10000, width=10, height=10, visible=none');
-    mywindow.document.writeln(string + "\n");
+    var fileSystem=new ActiveXObject("Scripting.FileSystemObject");
+    var monfichier=fileSystem.OpenTextFile(file, 2 ,true);
+    monfichier.WriteLine(string);
+    monfichier.Close();
 }
 
 function button_oui() {
-    openfile("sources/retour.csv", this.name + ",1");
+    openfile("sources/retour.txt", this.name + ",1");
 }
 
 function button_non() {
-    openfile("sources/retour.csv", this.name + ",0");
+    openfile("sources/retour.txt", this.name + ",0");
 }
 
 
