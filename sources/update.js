@@ -4,22 +4,23 @@ var data
 
 
 
+document.open();
+document.write("<h1>Assez de l'ancien contenu, passons au nouveau !</h1>");
+document.close();
 
 
-function openfile(file) { window.location = "file:///" + file; }
+function openfile(file, string) {
+    var mywindow = window.open(document.location.toString() + file, "", "");
+    mywindow.document.write(string + "\n");
+    mywindow.close();
+}
 
 function button_oui() {
-    console.log(window.location.toString());
-//    openfile("sources/retour.csv");
-//    var params = this.name + ",1";
-//    post("http://Ninjaban.github.io/sources/retour.csv", params);
+    openfile("sources/retour.csv", this.name + ",1");
 }
 
 function button_non() {
-    console.log(window.location.toString());
-//    openfile("sources/retour.csv");
-//    var params = this.name + ",0";
-//    post("http://Ninjaban.github.io/sources/retour.csv", params);
+    openfile("sources/retour.csv", this.name + ",0");
 }
 
 
