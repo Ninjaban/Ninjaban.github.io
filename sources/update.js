@@ -1,5 +1,30 @@
 var status=0
 var script
+var data
+
+
+
+
+
+function openfile(file) { window.location = "file:///" + file; }
+
+function button_oui() {
+    console.log(window.location.toString());
+//    openfile("sources/retour.csv");
+//    var params = this.name + ",1";
+//    post("http://Ninjaban.github.io/sources/retour.csv", params);
+}
+
+function button_non() {
+    console.log(window.location.toString());
+//    openfile("sources/retour.csv");
+//    var params = this.name + ",0";
+//    post("http://Ninjaban.github.io/sources/retour.csv", params);
+}
+
+
+
+
 
 function collision_read() {
     var head= document.getElementsByTagName('head')[0];
@@ -71,10 +96,14 @@ function collision_read() {
 	    var oui = document.createElement('button');
 	    oui.className = 'oui button';
 	    oui.innerHTML = 'OUI';
+	    oui.onclick = button_oui;
+	    oui.name = element.ID;
 	    val.appendChild(oui);
 	    var non = document.createElement('button');
 	    non.className = 'non button';
 	    non.innerHTML = 'NON';
+	    non.onclick = button_non;
+	    non.name = element.ID;
 	    val.appendChild(non);
 
 	    document.getElementById("base-block").appendChild(blocki);
