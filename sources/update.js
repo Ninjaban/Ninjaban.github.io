@@ -7,6 +7,7 @@ var data
 
 
 function openfile(file, string) {
+    console.log(document.location.toString() + file);
     var mywindow = window.open(document.location.toString() + file, "", 'toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no,left=10000, top=10000, width=10, height=10, visible=none');
     mywindow.document.writeln(string + "\n");
 }
