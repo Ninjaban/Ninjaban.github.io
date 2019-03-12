@@ -14,7 +14,6 @@ if (($submit === "OUI" || $submit === "NON") && $_POST["id"] != NULL) {
 
    $line = $_POST["id"].$key.'\n';
 
-   file_put_contents("sources/retour.csv", $line, FILE_APPEND);
    echo "OK\n";
 }
 else
