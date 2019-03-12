@@ -4,9 +4,6 @@ var data
 
 
 
-document.open();
-document.write("<h1>Assez de l'ancien contenu, passons au nouveau !</h1>");
-document.close();
 
 
 function openfile(file, string) {
