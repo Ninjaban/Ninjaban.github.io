@@ -88,20 +88,30 @@ function collision_read() {
 	    ul.appendChild(li3);
 
 
-	    var val = document.createElement('div');
+	    var val = document.createElement('form');
 	    val.className = 'validation';
+	    val.action = "";
+	    val.method = "POST";
 	    blocki.appendChild(val);
-	    var oui = document.createElement('button');
+	    var id = document.createElement('input');
+	    id.className = 'input-hide';
+	    id.type = "text";
+	    id.name = "id";
+	    id.value = element.ID;
+	    val.appendChild(id);
+	    var oui = document.createElement('input');
 	    oui.className = 'oui button';
-	    oui.innerHTML = 'OUI';
-	    oui.onclick = button_oui;
-	    oui.name = element.ID;
+	    oui.type = "submit";
+	    oui.name = "submit";
+	    oui.value = "OUI";
+	    oui.innerHTML = '<ion-icon name="checkmark" style="color: white; font-size: 32px;"></ion-icon>';
 	    val.appendChild(oui);
-	    var non = document.createElement('button');
+	    var non = document.createElement('input');
 	    non.className = 'non button';
-	    non.innerHTML = 'NON';
-	    non.onclick = button_non;
-	    non.name = element.ID;
+	    non.type = "submit";
+	    non.name = "submit";
+	    non.value = "NON";
+	    non.innerHTML = '<ion-icon name="close" style="color: white; font-size: 32px;"></ion-icon>';
 	    val.appendChild(non);
 
 	    document.getElementById("base-block").appendChild(blocki);

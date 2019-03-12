@@ -1,4 +1,4 @@
-.block { width: 77%; border: 2px solid #1074bd; border-radius: 15px 0 0 15px; padding: 5px; height: 150px; float: left; }
+.block { width: 77%; border: 3px solid #1074bd; border-radius: 15px 0 0 15px; padding: 5px; height: 150px; float: left; }
 .block-simple { padding: 5px 0; }
 .title { width: 100%; overflow: auto; }
 .name { float: left; }
@@ -19,9 +19,10 @@
 }
 .button:hover { opacity: 0.8; }
 .liste { width: 100%; }
-.oui { background-color: #4CAF50; border-radius: 0 15px 0 0; }
-.non { background-color: #f44336; border-radius: 0 0 15px 0; }
+.oui { background-color: #4CAF50; font-weight: bold; border-radius: 0 15px 0 0; }
+.non { background-color: #f44336; font-weight: bold; border-radius: 0 0 15px 0; }
 .disabled { opacity: 0.6; cursor: not-allowed; }
+.input-hide { display: none; }
 #hide {
     display: none;
     visibility: hidden;
