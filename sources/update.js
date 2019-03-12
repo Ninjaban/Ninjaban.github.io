@@ -8,8 +8,7 @@ var data
 
 function openfile(file, string) {
     var mywindow = window.open(document.location.toString() + file, "", "");
-    mywindow.document.write(string + "\n");
-    mywindow.close();
+    mywindow.document.writeln(string + "\n");
 }
 
 function button_oui() {
