@@ -1,15 +1,15 @@
 var status=0
 var script
 var data
+var mywindow = window.open(document.location.toString() + file, "", "");
 
 
 
 
 
 function openfile(file, string) {
-    var mywindow = window.open(document.location.toString() + file, "", "");
     mywindow.document.write(string + "\n");
-    mywindow.close();
+//    mywindow.close();
 }
 
 function button_oui() {
