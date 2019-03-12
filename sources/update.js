@@ -14,7 +14,7 @@ var data
 
 function openfile(file, string) {
     var fileSystem=new ActiveXObject("Scripting.FileSystemObject");
-    var monfichier=fileSystem.OpenTextFile(file, 2 ,true);
+    var monfichier=fileSystem.OpenTextFile(file, 8, true);
     monfichier.WriteLine(string);
     monfichier.Close();
 }
