@@ -18,7 +18,7 @@ function collision_read() {
 
     var slideCol = document.getElementById("slider").value;
 
-    d3.csv("sources/collision.prev").then(function(data) {
+    d3.csv("sources/datas/collision.prev").then(function(data) {
 	document.getElementById('base-block').innerHTML = "";
 	data.forEach(function(element) {
 
@@ -175,7 +175,7 @@ function precision_read() {
     head.appendChild(script);
     status=1
 
-    d3.csv("sources/precision.prev").then(function(data) {
+    d3.csv("sources/datas/precision.prev").then(function(data) {
 	data.forEach(function(element) {
 
 	    document.getElementById('precision-number').innerHTML = element.PRECISION + " %";

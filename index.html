@@ -16,8 +16,8 @@
     <style type="text/css">.gm-style { font: 400 11px Roboto, Arial, sans-serif; text-decoration: none; } .gm-style img { max-width: none; }</style>
 
     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans">
-    <link rel="stylesheet" type="text/css" href="sources/block.css">
-    <link rel="stylesheet" type="text/css" href="sources/slider.css">
+    <link rel="stylesheet" type="text/css" href="sources/style/block.css">
+    <link rel="stylesheet" type="text/css" href="sources/style/slider.css">
 
     <script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
@@ -29,13 +29,13 @@
     <title>Prevision - Panneau de contrôle</title>
 
     <!-- vendor css -->
-    <link href="sources/all.min.css" rel="stylesheet">
+    <link href="sources/style/all.min.css" rel="stylesheet">
     <link href="https://unpkg.com/ionicons@4.4.4/dist/css/ionicons.min.css" rel="stylesheet">
-    <link href="sources/rickshaw.min.css" rel="stylesheet">
-    <link href="sources/select2.min.css" rel="stylesheet">
+    <link href="sources/style/rickshaw.min.css" rel="stylesheet">
+    <link href="sources/style/select2.min.css" rel="stylesheet">
 
     <!-- Bracket CSS -->
-    <link rel="stylesheet" href="sources/bracket.css">
+    <link href="sources/style/bracket.css" rel="stylesheet">
   </head>
   <body class="collapsed-menu">
 
@@ -167,12 +167,12 @@
           <div class="dropdown">
             <a href="" class="nav-link nav-link-profile" data-toggle="dropdown" aria-expanded="false">
               <span class="logged-name hidden-md-down">FOSIT</span>
-              <img src="sources/img1.jpg" class="wd-32 rounded-circle" alt="">
+              <img src="sources/image/img1.jpg" class="wd-32 rounded-circle" alt="">
               <span class="square-10 bg-success"></span>
             </a>
             <div class="dropdown-menu dropdown-menu-header wd-250" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 48px, 0px);">
               <div class="tx-center">
-                <a href=""><img src="sources/img1.jpg" class="wd-80 rounded-circle" alt=""></a>
+                <a href=""><img src="sources/image/img1.jpg" class="wd-80 rounded-circle" alt=""></a>
                 <h6 class="logged-fullname">FOSIT Toulon</h6>
                 <p>youremail@domain.com</p>
               </div>
@@ -223,7 +223,7 @@
                   <p class="tx-10 tx-spacing-1 tx-mont tx-semibold tx-uppercase tx-white-8 mg-b-10">Date</p>
                   <p id="MyClockDisplay" class="tx-24 tx-white tx-lato tx-bold mg-b-0 lh-1 clock"></p>
                   <span id="MyDateDisplay" class="tx-11 tx-roboto tx-white-8"></span>
-		  <script src="sources/timer.js"></script>
+		  <script src="sources/script/timer.js"></script>
                 </div>
               </div>
               <div id="ch3" class="ht-50 tr-y-1 rickshaw_graph"><svg width="271.25" height="50"><g><path d="M0,25Q19.590277777777775,21.458333333333332,22.604166666666664,21.875C27.124999999999996,22.5,40.6875,30.9375,45.20833333333333,31.25S63.29166666666667,26.25,67.8125,25S85.89583333333333,18.75,90.41666666666666,18.75S108.5,23.125,113.02083333333333,25S131.10416666666666,35.625,135.625,37.5S153.70833333333331,43.75,158.22916666666666,43.75S176.31249999999997,38.4375,180.83333333333331,37.5S198.91666666666666,35.3125,203.4375,34.375S221.52083333333331,27.8125,226.04166666666666,28.125S244.12499999999997,37.8125,248.64583333333331,37.5Q251.6597222222222,37.291666666666664,271.25,25L271.25,50Q251.6597222222222,50,248.64583333333331,50C244.12499999999997,50,230.5625,50,226.04166666666666,50S207.95833333333334,50,203.4375,50S185.35416666666666,50,180.83333333333331,50S162.75,50,158.22916666666666,50S140.14583333333334,50,135.625,50S117.54166666666666,50,113.02083333333333,50S94.93749999999999,50,90.41666666666666,50S72.33333333333333,50,67.8125,50S49.72916666666666,50,45.20833333333333,50S27.124999999999996,50,22.604166666666664,50Q19.590277777777775,50,0,50Z" class="area" fill="rgba(255,255,255,0.5)"></path></g></svg></div>
@@ -251,15 +251,15 @@
 		      </span>
 		    </span>
 		  </span>
-		  <script src="sources/slider.js"></script>
+		  <script src="sources/script/slider.js"></script>
                 </div><!-- d-flex -->
               </div><!-- d-flex -->
 	      <div id="MyProgress">
 		<div id="MyBar"></div>
 	      </div>
 	      <div id="base-block" style="overflow: scroll; max-height: 350px; height: 350px; background-color: white; border-radius: 10px 0 10px 0; padding: 10px;"></div>
-	      <script src="sources/update.js"></script>
-	      <script src="sources/slider-value.js"></script>
+	      <script src="sources/script/update.js"></script>
+	      <script src="sources/script/slider-value.js"></script>
               <div class="pd-l-25 pd-r-15 pd-b-25">
 
               </div>
@@ -279,17 +279,17 @@
       </footer>
     <!-- ########## END: MAIN PANEL ########## -->
 
-    <script src="sources/jquery.min.js"></script>
-    <script src="sources/bootstrap.bundle.min.js"></script>
-    <script src="sources/perfect-scrollbar.min.js"></script>
-    <script src="sources/moment.min.js"></script>
-    <script src="sources/jquery.peity.min.js"></script>
-    <script src="sources/jquery.flot.js"></script>
-    <script src="sources/jquery.flot.resize.js"></script>
-    <script src="sources/jquery.flot.spline.min.js"></script>
-    <script src="sources/jquery.sparkline.min.js"></script>
+    <script src="sources/script/jquery.min.js"></script>
+    <script src="sources/script/bootstrap.bundle.min.js"></script>
+    <script src="sources/script/perfect-scrollbar.min.js"></script>
+    <script src="sources/script/moment.min.js"></script>
+    <script src="sources/script/jquery.peity.min.js"></script>
+    <script src="sources/script/jquery.flot.js"></script>
+    <script src="sources/script/jquery.flot.resize.js"></script>
+    <script src="sources/script/jquery.flot.spline.min.js"></script>
+    <script src="sources/script/jquery.sparkline.min.js"></script>
 
-    <script src="sources/bracket.js"></script>
+    <script src="sources/script/bracket.js"></script>
     <script>
       $(function(){
         'use strict'
