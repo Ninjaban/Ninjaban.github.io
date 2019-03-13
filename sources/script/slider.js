@@ -1,3 +1,4 @@
+var element = document.getElementsByClassName("block-simple");
 var slider = document.getElementById("slider");
 var obj = slider;
 var value = obj.value;
