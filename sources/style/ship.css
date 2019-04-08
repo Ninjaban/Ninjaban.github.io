@@ -1,0 +1,11 @@
+.ship {
+    text-align: center;
+    font-size: 0.5em;
+
+    /*legend*/
+    color: white;
+}
+.ship svg {
+    /*display: block;*/
+    zoom: 0.5;
+}
