@@ -1,3 +1,7 @@
 #nav-main {
     display: none;
 }
+
+#nav-map {
+    position: absolute;
+}
