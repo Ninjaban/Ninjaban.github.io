@@ -1,3 +1,10 @@
+var all = document.getElementsByClassName("br-menu-link");
+for(var i=0; i<all.length; i++) {
+    all[i].className = "br-menu-link";
+    if (all[i].id == "nav-main")
+        all[i].className = "br-menu-link active";
+}
+
 function menu_click(elem) {
     var id = elem.id;
     var className = elem.className;
@@ -5,7 +12,6 @@ function menu_click(elem) {
     var all = document.getElementsByClassName("br-menu-link");
     for(var i=0; i<all.length; i++) {
         all[i].className = "br-menu-link";
-        console.log(all[i].id, elem.id);
         if (all[i].id == elem.id)
             all[i].className = "br-menu-link active";
     }
