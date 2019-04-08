@@ -2,7 +2,6 @@ function menu_click() {
     var id = this.id;
     var className = this.className;
 
-    alert("La putain de ta race");
     var all = document.getElementsByClassName("br-menu-link");
     for(var i=0; i<all.length; i++) {
         all[i].className = "br-menu-link";
