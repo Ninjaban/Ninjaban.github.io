@@ -4,11 +4,29 @@ geojson.features.forEach(function(marker) {
     var rotate = "rotate(" + marker.properties.course + "deg)";
     // create a HTML element for each feature
     var el = document.createElement('div');
-    var al = document.createElement('div');
     el.className = 'marker-link';
-    al.className = 'marker';
-    al.style.transform = al.style.transform + rotate;
-    el.appendChild(al);
+
+    var ship = document.createElement('div');
+    ship.className = 'ship';
+    ship.style.transform = ship.style.transform + rotate;
+
+    var svg = document.createElement('svg');
+    svg.width = 24;
+    svg.height = 34;
+    svg.viewBox = "0 0 24 34";
+
+    var g = document.createElement('g');
+    g.style = "opacity:0.75";
+
+    var path = document.createElement('path');
+    path.d = "M13.88,3.45c-1-3.13-2.73-3.13-3.76,0L2,28.05c-1,3.13.82,5.7,4.12,5.7H17.88c3.3,0,5.15-2.56,4.12-5.7Z";
+    path.style = "fill:#fff";
+
+    g.appendChild(path);
+    svg.appendChild(g);
+    ship.appendChild(svg);
+
+    el.appendChild(ship);
 
     // make a marker for each feature and add to the map
     new mapboxgl.Marker(el)
