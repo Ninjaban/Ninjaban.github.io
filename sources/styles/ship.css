@@ -11,3 +11,9 @@
     width: 24px;
     height: 34px;
 }
+.ship g {
+    opacity: 0.75;
+}
+.ship path {
+    fill: #fff;
+}
