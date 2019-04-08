@@ -12,9 +12,12 @@ geojson.features.forEach(function(marker) {
 
     var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
     svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+    svg.setAttribute('width', '24');
+    svg.setAttribute('height', '34');
     svg.setAttribute('viewBox', '0 0 24 34');
 
-    var g = document.createElement('g');
+    var g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+    g.setAttribute('opacity', '0.75');
 
     var path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
     path.setAttribute('d', 'M13.88,3.45c-1-3.13-2.73-3.13-3.76,0L2,28.05c-1,3.13.82,5.7,4.12,5.7H17.88c3.3,0,5.15-2.56,4.12-5.7Z');

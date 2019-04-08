@@ -8,9 +8,4 @@
 .ship svg {
     /*display: block;*/
     zoom: 0.5;
-    width: 24px;
-    height: 34px;
-}
-.ship g {
-    opacity: 0.75;
 }
