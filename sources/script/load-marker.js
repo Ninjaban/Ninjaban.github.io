@@ -11,12 +11,13 @@ geojson.features.forEach(function(marker) {
     ship.style.transform = ship.style.transform + rotate;
 
     var svg = document.createElement('svg');
+    svg.xmlns = "http://www.w3.org/2000/svg";
     svg.viewBox = "0 0 24 34";
 
     var g = document.createElement('g');
 
     var path = document.createElement('path');
-    path.setAttribute('d') = 'M13.88,3.45c-1-3.13-2.73-3.13-3.76,0L2,28.05c-1,3.13.82,5.7,4.12,5.7H17.88c3.3,0,5.15-2.56,4.12-5.7Z';
+    path.d = 'M13.88,3.45c-1-3.13-2.73-3.13-3.76,0L2,28.05c-1,3.13.82,5.7,4.12,5.7H17.88c3.3,0,5.15-2.56,4.12-5.7Z';
 
     g.appendChild(path);
     svg.appendChild(g);
