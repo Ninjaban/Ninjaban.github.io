@@ -8,4 +8,6 @@
 .ship svg {
     /*display: block;*/
     zoom: 0.5;
+    width: 24px;
+    height: 34px;
 }
