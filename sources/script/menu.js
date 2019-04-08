@@ -6,8 +6,9 @@ function menu_click() {
     var all = document.getElementsByClassName("br-menu-link");
     for(var i=0; i<all.length; i++) {
         all[i].className = "br-menu-link";
+        if (all[i].id === id)
+            all[i].className = "br-menu-link active";
     }
-    this.className = "br-menu-link active";
 
     if (id === "menu-main" && className !== "br-menu-link active")
     {
