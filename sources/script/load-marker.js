@@ -12,9 +12,9 @@ geojson.features.forEach(function(marker) {
 
     var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
     svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
-    svg.setAttribute('width', '24');
-    svg.setAttribute('height', '34');
-    svg.setAttribute('viewBox', '0 0 24 34');
+    svg.setAttribute('width', '20');
+    svg.setAttribute('height', '30');
+    svg.setAttribute('viewBox', '0 0 20 30');
 
     var g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
     g.setAttribute('opacity', '0.75');
