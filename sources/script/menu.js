@@ -1,8 +1,8 @@
-var all = document.getElementsByClassName("br-menu-link");
+var all = document.getElementsByClassName("br-mainpanel");
 for(var i=0; i<all.length; i++) {
-    all[i].className = "br-menu-link";
+    all[i].style = "display: none;";
     if (all[i].id == "nav-main")
-        all[i].className = "br-menu-link active";
+        all[i].style = "";
 }
 
 function menu_click(elem) {
