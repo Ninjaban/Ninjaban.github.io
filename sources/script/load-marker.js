@@ -11,8 +11,8 @@ geojson.features.forEach(function(marker) {
     ship.style.transform = ship.style.transform + rotate;
 
     var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-    svg.xmlns = "http://www.w3.org/2000/svg";
-    svg.viewBox = "0 0 24 34";
+    svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+    svg.setAttribute('viewBox', '0 0 24 34');
 
     var g = document.createElement('g');
 
