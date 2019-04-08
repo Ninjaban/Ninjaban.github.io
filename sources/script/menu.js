@@ -18,12 +18,12 @@ function menu_click(elem) {
 
     if (id == "menu-main" && className != "br-menu-link active")
     {
-        document.getElementById('nav-main').style = "display: block";
+        document.getElementById('nav-main').style = "";
         document.getElementById('nav-map').style = "display: none";
     }
     if (id == "menu-map" && className != "br-menu-link active")
     {
         document.getElementById('nav-main').style = "display: none";
-        document.getElementById('nav-map').style = "display: ";
+        document.getElementById('nav-map').style = "";
     }
 };
