@@ -16,7 +16,7 @@ geojson.features.forEach(function(marker) {
     var g = document.createElement('g');
 
     var path = document.createElement('path');
-    path.d='M13.88,3.45c-1-3.13-2.73-3.13-3.76,0L2,28.05c-1,3.13.82,5.7,4.12,5.7H17.88c3.3,0,5.15-2.56,4.12-5.7Z';
+    path.setAttribute('d') = 'M13.88,3.45c-1-3.13-2.73-3.13-3.76,0L2,28.05c-1,3.13.82,5.7,4.12,5.7H17.88c3.3,0,5.15-2.56,4.12-5.7Z';
 
     g.appendChild(path);
     svg.appendChild(g);
