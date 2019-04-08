@@ -1,4 +1,4 @@
-var element = document.getElementsByClassName("br-menu-link");
+var element = document.getElementsByClassName("br-menu-link active");
 
 element.onclick = function() {
     var id = this.id;
